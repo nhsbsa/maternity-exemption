@@ -1,0 +1,83 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  NHSBSA Matex Prototype
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+      <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service 
+      <span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
+      </p> 
+    </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>Use this service to apply for maternity exemption for new mother and expectant mother.</p>
+      <p>Maternity exemptions certificate entitles the mother for free prescriptions</p>
+
+      <ul class="list list-bullet">
+        <li>while pregnant</li>
+        <li>12 months after the birth of the child 
+      </uL>
+      </p>You will need the mother's:</p>
+     
+      <ul class="list list-bullet">
+        <li>name</li>
+        <li> date of birth</li>
+        <li>due or birth date of the child</li>
+        <li>email or postal address</li>
+      </uL>
+
+      <p>Application takes around 5 minutes.</p>
+
+      <p>
+        <a class="button button-start" href="mother-present" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Before you start</h2>
+
+      <p>You can also <a href="#">register by post.</a></p>
+
+      <p>The online service is also available in <a href="#">Welsh (Cymraeg).</a></p>
+
+      <p>You can’t register for this service if you’re in the UK illegally.</p>
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Related link</a></li>
+            <li><a href="#">Related link</a></li>
+            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
