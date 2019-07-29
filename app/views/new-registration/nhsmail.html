@@ -1,11 +1,10 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-NHSBSA Matex Have you got an account Prototype
+  Help paying for NHS Costs prototype
 {% endblock %}
 
 {% block content %}
-
 
 <main id="content" role="main">
 	<div class="phase-banner">
@@ -26,37 +25,32 @@ NHSBSA Matex Have you got an account Prototype
   			<div class="form">
 		  		<form id="appform" role="form" method="post">
 		  			<fieldset>
-					    <h1 class="heading-large">
-							<span class="heading-secondary">Apply for a maternity exemption certificate</span>
-							Have you got an account?
-			   		 	</h1>
+							<h1 class="heading-large">
+									<span class="heading-secondary">Apply for a maternity exemption certificate</span>
+									Do you have an NHS email account?
+									</h1>
+                            <span class="form-hint"><br>
+   								 This will be the email and password you use for Outlook to access your NHS emails.
+ 							 </span>
+					    </h1>
+                        
 					    <div class="form-group">
 							<div class="multiple-choice" onclick="showSign(); hideNew();">
-					        	<input id="radio-1" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
-					        	<label for="radio-1"><span class="form-label-bold">Yes. Sign in with your maternity exemption account</span>
-					        		<span class="form-hint" style="color: #45454A;">
-            							If you are already registered for this service you can sign in to apply for maternity exemption certificates. 
-        							</span>
-					        	</label>
+					        	<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                                <label for="radio-inline-1">Yes</label>
 							</div>
-					      	<p class="form-block">or</p>
 					      	<div class="multiple-choice" onclick="hideSign(); showNew();">
-					        	<input id="radio-2" type="radio" name="radio-group" value="I am a British citizen living abroad">
-					        	<label for="radio-2"><span class="form-label-bold">No. I don't have an account</span>
-					        		<span class="form-hint" style="color: #45454A;">
-										You must be a Midwife, GP or Health Visitor who is registered with the NMC or GMC to create an account. 
-										
-        							</span>
-					        	</label>
+					        	<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+                            <label for="radio-inline-2">No</label>
 					      	</div>
 				      	</div>
             		</fieldset>
 				</form>	
 				<div class="form-group" id="already-registered">
-          			<a class="button" href="sign-in-auth.html" id="sign-continute">Continue</a>
+          			<a class="button" href="nmc-gmc" id="sign-continute">Continue</a>
         		</div>    
         		<div class="form-group" id="new-account" style="display:none;">
-          			<a class="button" href="#"id="register-continue">Continue</a>
+          			<a class="button" href="https://support.nhs.net/knowledge-base/registering-for-an-nhsmail-account/" id="register-continue">Continue</a>
         		</div>    
 			</div>
  		</div>
