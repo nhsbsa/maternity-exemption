@@ -1,7 +1,7 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-NHSBSA Matex Check your answer Prototype
+NHSBSA Matex prototype
 {% endblock %}
 
 {% block content %}
@@ -131,28 +131,27 @@ NHSBSA Matex Check your answer Prototype
                     </dd>
                 </div>
               </dl> 
-              <h2 class="heading-large">Declaration</h2>
-              <div class="notice" style="position:relative">
-                <i class="icon icon-important" style="margin-top:-215px;">
-                  <span class="visuallyhidden">Warning</span>
+<br>
+<br>
+<br>
+              <div class="notice form-group">
+                <i class="icon icon-important">
+                  <span class="visually-hidden">Warning</span>
                 </i>
-                <span class="declaration" style="position: relative; display:block; padding-left:65px;">
-                  I confirm that this information is correct and true in accordance with the applicant’s records on 10 April 2020.
-                  <br><br>    
-                  <p>I confirm that the applicant:</p>
-                  <ul class="list list-bullet">
-                    <li>has given her permission for this application to be submitted on her behalf</li>
-                    <li>knows the information submitted will be used by the NHS Business Services Authority and shared other organisations working on their behalf where necessary</li>
-                    <li>understands her data will not be transferred outside of the European Economic Area and will be deleted within 24 months of the expiry date of the exemption</li>
-                    <li>is aware that this is a pilot scheme she is taking part in</li>
-                    <li>consents to her data being used to evaluate the digital pilot scheme</li>
-                  </ul>
-                  <p>I understand that when I press submit, I am submitting an application on behalf of the named person.</p>  
-                </span>
-              </div>  
-              <br>
+                <strong class="bold-medium">
+                  Confirmation
+                </strong>
+                <p></p>
+              </div>
+
+              <div class="multiple-choice multiple-radio">
+                <input id="confirm" name="confirm" type="checkbox" value="true">
+                <label for="confirm">I confirm that this information is correct and true in accordance with the mother's records on 10 August 2019.<br>
+                <p>I understand that when I press confirm and submit, I am submitting an application on behalf of the named person.</p> </label>
+              </div>
+        
               <div class="form-group">
-                <a class="button" href="mother-done" id="submit">Submit</a>
+                <a class="button" href="mother-done" id="submit">Confirm and Submit</a>
               </div>  
           </fieldset>
         </form> 
