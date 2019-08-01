@@ -33,55 +33,53 @@
    								 This will be the email and password you use for Outlook to access your NHS emails.
  							 </span>
 					    </h1>
-                        
-					    <div class="form-group">
-							<div class="multiple-choice" onclick="showSign(); hideNew();">
-					        	<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-                                <label for="radio-inline-1">Yes</label>
-							</div>
-					      	<div class="multiple-choice" onclick="hideSign(); showNew();">
-					        	<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-                            <label for="radio-inline-2">No</label>
-					      	</div>
-				      	</div>
-            		</fieldset>
-				</form>	
-				<div class="form-group" id="already-registered">
-          			<a class="button" href="nmc-gmc" id="sign-continute">Continue</a>
-        		</div>    
-				<div class="form-group" id="new-account" style="display:none;">
-					<div class="panel panel-border-wide">
-						<p>
-							If you're working in a trust or organisation that uses NHSmail, you can contact your Local Administrator or IT Helpdesk to set up an account.
-							<br>For more information on joining NHSmail visit  <a href="https://support.nhs.net/knowledge-base/registering-for-an-nhsmail-account/">NHS Mail Page</a>
-						</p>
-					  </div>
-          			<a class="button" href="https://support.nhs.net/knowledge-base/registering-for-an-nhsmail-account/" id="register-continue">Continue</a>
+                        	
+							<div class="multiple-choice" data-target="nhs-mail">
+									<input id="example-nhs-email" type="radio" name="radio-contact-group" value="Yes">
+									<label for="example-nhs-email">Yes</label>
+							 </div>
+								  <div class="panel panel-border-narrow js-hidden" id="nhs-mail">
+									<label class="form-label" for="contact-email">NHS Email address</label>
+									<input class="form-control" name="contact-email" type="text" id="contact-email">
+									</div>
+
+									<div class="multiple-choice" data-target="no-nhs-mail">
+											<input id="example-no-nhs-mail" type="radio" name="radio-contact-group" value="No">
+											<label for="example-no-nhs-mail">No</label>
+										  </div>
+										  <div class="panel panel-border-narrow js-hidden" id="no-nhs-mail">
+											<label class="form-label" for="contact-phone">If you're working in a trust or organisation that uses NHSmail, you can contact your Local Administrator or IT Helpdesk to set up an account.
+													<br>For more information on joining NHSmail visit  <a href="https://support.nhs.net/knowledge-base/registering-for-an-nhsmail-account/">NHS Mail Page</a></label>						    
+            		</fieldset>	
+			</form>	
+				
+			<div class="multiple-choice" id="nhs-mail">
+				 <a class="button" href="nmc-gmc" id="sign-continute">Continue</a>
+			</div>
+			
+
         		</div>    
 			</div>
  		</div>
 	</div>
 
 	
-
-
-
 	
 <script>
 	function showSign() {
-		document.getElementById('already-registered').style.display = "block";
+		document.getElementById('nhs-mail').style.display = "block";
 	}
 
 	function hideNew() {
-		document.getElementById('new-account').style.display = 'none';
+		document.getElementById('no-nhs-mail').style.display = 'none';
 	}
 
 	function hideSign() {
-		document.getElementById('already-registered').style.display = 'none';
+		document.getElementById('nhs-,mail').style.display = 'none';
 	}
 
 	function showNew() {
-		document.getElementById('new-account').style.display = 'block';
+		document.getElementById('no-nhs-mail').style.display = 'block';
 	}
 </script>
 </main>
