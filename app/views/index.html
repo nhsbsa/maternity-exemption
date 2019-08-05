@@ -1,13 +1,140 @@
 {% extends "layout_bsa.html" %}
-
 {% block page_title %}
-  Maternity Exemption-MATEX prototype
+Apply for help to pay NHS costs
 {% endblock %}
-
 {% block content %}
+<style>
+    .versions-prod:before {
+        content: "PRIVATE BETA";
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+        font-family: Arial, sans-serif;
+        font-weight: 400;
+        text-transform: none;
+        font-size: 16px;
+        line-height: 1.25;
+        background: #2360AC;
+        color: white;
+    }
 
+    .versions-prod {
+        position: relative;
+        overflow: hidden;
+        border: 3px solid #2360AC;
+        margin-top: 30px;
+        margin-bottom: 35px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+
+    @media (min-width: 641px) {
+        .versions-prod {
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+    }
+
+    .versions:before {
+        content: "RESEARCH";
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+        font-family: Arial, sans-serif;
+        font-weight: 400;
+        text-transform: none;
+        font-size: 16px;
+        line-height: 1.25;
+        background: #bfc1c3;
+        color: white;
+    }
+
+    .versions-alpha {
+        position: relative;
+        overflow: hidden;
+        border: 3px solid #D53880;
+        margin-top: 30px;
+        margin-bottom: 35px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+
+    @media (min-width: 641px) {
+        .versions-alpha {
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+    }
+
+    .versions-alpha:before {
+        content: "ALPHA";
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+        font-family: Arial, sans-serif;
+        font-weight: 400;
+        text-transform: none;
+        font-size: 16px;
+        line-height: 1.25;
+        background: #D53880;
+        color: white;
+    }
+
+    .versions {
+        position: relative;
+        overflow: hidden;
+        border: 3px solid #bfc1c3;
+        margin-top: 30px;
+        margin-bottom: 35px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+
+    @media (min-width: 641px) {
+        .versions {
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+    }
+
+    blockquote {
+        background: #f9f9f9;
+        border-left: 10px solid #ccc;
+        margin: 1.5em 0;
+        padding: 0.5em 10px;
+        quotes: "\201C""\201D""\2018""\2019";
+        font-style: italic;
+    }
+
+    blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.15em;
+        vertical-align: -0.4em;
+    }
+
+    blockquote p {
+        display: inline;
+    }
+</style>
 <main id="content" role="main">
-
     <div style="background-color: #DEE0E2; padding: 25px 25px 1px 25px; margin-top:15px;">
         <div class="notice" style="margin-bottom:25px;">
             <i class="icon icon-important">
@@ -18,60 +145,51 @@
             </strong>
         </div>
     </div>
-
-  <div class="grid-row">
-  <div class="column-two-thirds">
-
-        <h1 class="heading-xlarge">
-          <span class="heading-secondary">Apply for Maternity Exemption Certificate</span>
-          Prototype 
-        </h1>
-
+    <br>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <header class="page-header">
+                <p class="page-header--sub heading-secondary">Apply for Maternity Exemption Certificate</p>
+                <h1 class="page-header--lede heading-xlarge" style="margin-top:0">Prototype</h1>
+            </header>
+        </div>
+    </div>
   
-  
-  <table>
-    <thead>
-      <tr>
-        <th>Link</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
+    <details>
+        <summary><span class="summary">Sprint 73</span></summary>
+        <br>
+        <div class="panel panel-border-narrow">
+            <div class="grid-row">
+                <div class="column-third">
+                    <h3 class="heading-small" style="float:left; margin-top:20px">MATEX Self registration:</h3>
+                </div>
+                <div class="column-two-thirds">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="width:60%">Credentials are matched in ESR</td>
+                                <td><a href="new-registration/start-page">Start page</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">Credentials are not matched in ESR</td>
+                                <td><a href="#">Start page</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </details>
+   
+ 
 
-        <tr>
-            <td><a href="new-registration/start-page">Matex self-registration</a></td>
-            <td>Start page for self-matex registration</td>
-          </tr>
+                    </div>
+                </div>
+            </div>
 
-      <tr>
-        <td><a href="signed-in/start-page">Signed In</a></td>
-        <td>Start page if signed in</td>
-      </tr>
+        </div>
+    </details>
 
-      <tr>
-        <td><a href="not-signed-in/start-page">Not signed in</a></td>
-        <td>Start page if not signed in</td>
-      </tr>
-
-     
-
-        <tr>
-          <td><a href="matex-down/sign-in-auth">Matex down</a></td>
-          <td>Matex down</td>
-        </tr>
-      
-
-       
-    </tbody>
-  </table>
-
-  
-  </div>
-
-</div>
 
 </main>
-
 {% endblock %}
-
-
