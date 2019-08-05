@@ -10,11 +10,11 @@ router.get('/', function (req, res) {
 
 router.get(/email-account-handler/, function (req, res) {
   if (req.query.radiocontactgroup == 'Yes') {
-    res.redirect('../esrmatch/nmc-gmc');
+    res.redirect('../esr-match/nmc-gmc');
   } else if (req.query.radiocontactgroup == 'No') {
-    res.redirect('../esrmatch/nonhsemail');
+    res.redirect('../esr-match/nonhsemail');
   } else {
-    res.redirect('../esrmatch/nhsmail');
+    res.redirect('../esr-match/nhsmail');
   }
 });
 
