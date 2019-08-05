@@ -1,74 +1,78 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-   NHSBSA Matex Register to apply Prototype
+NHSBSA Matex Register to apply Prototype
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
 	<div class="phase-banner">
-      <p>
-        <strong class="phase-tag">BETA</strong>This is a new service <span>&nbsp;- your <a target="_blank" href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a> will help us to improve it.</span>
-      </p>
-  	</div>
-  	<div class="grid-row">
-    	
-	  </div>
-	  
-  	<div class="grid-row">
-			<div class="column-full">
-				<a href="javascript:history.go(-1)" class="link-back">Back</a>
-				  <span style="float:right; font-size:16px; margin-top: 30px;">
-					  <a href="help" target="_blank" rel="noopener noreferrer">Help</a>
-				</span> 
+		<p>
+			<strong class="phase-tag">BETA</strong>This is a new service <span>&nbsp;- your <a target="_blank"
+					href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a>
+				will help us to improve it.</span>
+		</p>
+	</div>
+	<div class="grid-row">
+
+	</div>
+
+	<div class="grid-row">
+		<div class="column-full">
+			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+			<span style="float:right; font-size:16px; margin-top: 30px;">
+				<a href="help" target="_blank" rel="noopener noreferrer">Help</a>
+			</span>
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div class="form">
+				<form id="appform" role="form" method="post">
+					<fieldset>
+						<h1 class="heading-large">
+							<span class="heading-secondary">Register to apply for a maternity exemption certificate
+							</span>
+							Your details
+							
+						</h1>
+						<!-- <h2 class="heading-medium">Your details</h2> -->
+						<div class="form-group">
+							<label class="form-label-bold" for="first-name" id="first-name-label">First name</label>
+							<input id="first-name" class="form-control" type="text" max-length="30" autocomplete="off"
+								aria-required="false">
+						</div>
+						<div class="form-group">
+							<label class="form-label-bold" for="last-name" id="last-name-label">Last name</label>
+							<input id="last-name" class="form-control" type="text" max-length="30" autocomplete="off"
+								aria-required="false">
+						</div>
+
+						<div class="form-group">
+							<label class="form-label-bold" for="care" id="care-label">NHS e-mail address</label>
+							<input id="care" class="form-control" type="text" max-length="10" autocomplete="off"
+								aria-required="false">
+						</div>
+
+
+
+						<div class="form-group">
+							<label class="form-label-bold" for="care" id="care-label">GMC reference number</label>
+							<input id="care" class="form-control" type="text" max-length="10" autocomplete="off"
+								aria-required="false">
+						</div>
+
+
+					</fieldset>
+				</form>
+				<div class="form-group">
+					<a class="button" href="check-answer-gmc" id="next">Continue</a>
+				</div>
 			</div>
 		</div>
-
-  	<div class="grid-row">
-  		<div class="column-two-thirds">
-  			<div class="form">
-		  		<form id="appform" role="form" method="post">
-		  			<fieldset>
-						<h1 class="heading-large">
-							<span class="heading-secondary">Register to apply for a maternity exemption certificate </span>
-							Your details
-							<br>
-							GMC
-			   		 	</h1>
-					    <!-- <h2 class="heading-medium">Your details</h2> -->
-					    <div class="form-group">
-					    	<label class="form-label-bold" for="first-name" id="first-name-label">First name</label>
-					    	<input id="first-name" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
-					    </div>
-					     <div class="form-group">
-					    	<label class="form-label-bold" for="last-name" id="last-name-label">Last name</label>
-					    	<input id="last-name" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
-						</div>
-
-						<div class="form-group">
-								<label class="form-label-bold" for="care" id="care-label">NHS e-mail address</label>
-								<input id="care" class="form-control" type="text" max-length="10" autocomplete="off" aria-required="false">
-						</div>
-
-						
-
-						<div class="form-group">
-								<label class="form-label-bold" for="care" id="care-label">GMC reference number</label>
-								<input id="care" class="form-control" type="text" max-length="10" autocomplete="off" aria-required="false">
-							</div>
-							
-					  
-            		</fieldset>
-				</form>	
-				<div class="form-group">
-          			<a class="button" href="check-answer-gmc" id="next">Continue</a>
-        		</div>    
-			</div>
- 		</div>
 	</div>
 </main>
 
 {% endblock %}
-
-

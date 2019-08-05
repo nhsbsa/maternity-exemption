@@ -1,47 +1,48 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-  NHSBSA Matex Prototype
+NHSBSA Matex Prototype
 {% endblock %}
 
 {% block proposition_header %}
-  <!-- blank to remove the proposition header -->
+<!-- blank to remove the proposition header -->
 {% endblock %}
 
 {% block header_class %}
-  <!-- blank to remove the proposition header -->
+<!-- blank to remove the proposition header -->
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
 
-    <div class="phase-banner">
-      <p>
+  <div class="phase-banner">
+    <p>
       <strong class="phase-tag">BETA</strong>
-      This is a new service 
+      This is a new service
       <span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
-      </p> 
+    </p>
+  </div>
+  <div class="grid-row">
+    <div class="column-full">
+      <a href="javascript:history.go(-1)" class="link-back">Back</a>
+      <span style="float:right; font-size:16px; margin-top: 30px;">
+        <a href="help" target="_blank" rel="noopener noreferrer">Help</a>
+      </span>
     </div>
-    <div class="grid-row">
-        <div class="column-full">
-          <a href="javascript:history.go(-1)" class="link-back">Back</a>
-            <span style="float:right; font-size:16px; margin-top: 30px;">
-              <a href="help" target="_blank" rel="noopener noreferrer">Help</a>
-        </span> 
-        </div>
-    </div>
+  </div>
   <div class="grid-row">
     <div class="column-two-thirds">
 
       <h1 class="heading-large">
-        Register to apply for maternity exemption certificate
+        <span class="heading-secondary">Register to apply for a maternity exemption certificate</span>
+        What you'll need
       </h1>
-      
+
       <p>Use this service to register to apply for maternity exemption certificate .</p>
       <p>You must be a Midwife, GP or Health Visitor who is registered with the NMC or GMC to create an account.</p>
       <p>To register we will ask information about your:</p>
-     
+
       <ul class="list list-bullet">
         <li>name</li>
         <li>date of birth</li>
@@ -55,10 +56,10 @@
         <a class="button" href="nhsmail" role="button">Continue</a>
       </p>
 
-      
+
 
     </div>
-    
+
   </div>
 
 </main>

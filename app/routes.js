@@ -12,7 +12,9 @@ router.get(/email-account-handler/, function (req, res) {
   if (req.query.radiocontactgroup == 'Yes') {
     res.redirect('../new-registration/nmc-gmc');
   } else if (req.query.radiocontactgroup == 'No') {
-    res.redirect('https://support.nhs.net/knowledge-base/registering-for-an-nhsmail-account/');
+    res.redirect('../new-registration/nonhsemail');
+  } else {
+    res.redirect('../new-registration/nhsmail');
   }
 });
 
