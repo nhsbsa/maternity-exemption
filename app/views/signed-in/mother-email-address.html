@@ -31,22 +31,21 @@ NHSBSA Matex prototype
 					<fieldset>
 				    	<legend class="visually-hidden">Is the mother present?</legend>
 							
-						
 						<div class="form-group">
-					   			<label class="form-label-bold" for="Telephone" id="first-name-label">Email address</label>
-					   			<p>
-					   				An incorrect email address will prevent the mother from receiving her exemption.
-					   			</p>
-					   			<input id="Telephone" class="form-control" type="email" max-length="30" autocomplete="off" aria-required="false">
-							   </div>
+								  <label class="form-label" for="email">Email address</label>
+								  <p class="form-hint">An incorrect email address will prevent the mother from receiving her exemption</p>
+								  <input class="form-control" id="email" name="email" type="text" value="{{ data['email'] }}">
+								</div>
+						
+						
 
+							   <form action="email-handler" method="get" class="form">
 
-							   
-
+								
 
 
 					</fieldset>
-					<a class="button" href="check-answer-mother" id="next">Continue</a>
+					<a class="button" href="email-confirm" id="next">Continue</a>
         		</form>
 			</div>		
  		</div>

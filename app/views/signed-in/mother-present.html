@@ -24,11 +24,12 @@ NHSBSA Matex prototype
   	<div class="grid-row">
   		<div class="column-two-thirds">
   			<div class="form">
-		  		<h1 class="heading-large">
-					<span class="heading-secondary">Apply for a maternity exemption certificate</span>
-					Is the mother present?
-			    </h1>
-
+		
+				<header class="page-header">
+						<p class="page-header--sub heading-secondary">Apply for a maternity exemption certificate</p>
+						<h1 class="page-header--lede heading-large">Is the mother present?</h1>
+						</header>
+						
 			    <form id="appform" role="form" method="post">
 					<div class="form-group">
 						<fieldset class="inline">
@@ -43,15 +44,41 @@ NHSBSA Matex prototype
 				        		<label for="radio-inline-2">No</label>
 				      		</div>
 				      		<div class="panel panel-border-narrow" id="date-you-met" style="display:none;">
-								<label for="motherInterviewDate" class="form-label-bold">Date you met with the mother
-										<span class="form-hint">For example, 01/03/2018</span>
+							
 								</label>
-								<input id="motherInterviewDate" type="text" class="form-control date" name="motherInterviewDate" autocomplete="off" value="">
+								<fieldset>
+									<label class="form-label-bold" for="DOB" id="dateofbirth-label">Date you met the mother
+										</label>
+									<p class="form-hint">For example, 31 03 2018</p>
+	
+									<div class="form-date">
+										<div class="form-group form-group-day">
+											<label class="form-label" for="jobstartdateday">Day</label>
+											<input class="form-control" id="jobstartdateday" name="jobstartdateday"
+												type="text" pattern="[0-9]*" min="0" max="31">
+										</div>
+	
+										<div class="form-group form-group-month">
+											<label class="form-label" for="jobstartdatemonth">Month</label>
+											<input class="form-control" id="jobstartdatemonth" name="jobstartdatemonth"
+												type="text" pattern="[0-9]*" min="0" max="12">
+										</div>
+	
+										<div class="form-group form-group-year">
+											<label class="form-label" for="jobstartdateyear">Year</label>
+											<input class="form-control" id="jobstartdateyear" name="jobstartdateyear"
+												type="text" pattern="[0-9]*" min="0" max="2016">
+										</div>
+									</div>
+								</fieldset>
+
+								
 							</div>
+							
 						</fieldset>
 					</div>
 					<div class="form-group">
-          				<a class="button" href="application" id="next">Continue</a>
+          				<a class="button" href="mother-name" id="next">Continue</a>
         			</div>  
 				</form>
 			</div>		

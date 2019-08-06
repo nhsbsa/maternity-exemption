@@ -1,73 +1,134 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-   NHSBSA Matex prototype
+NHSBSA Matex prototype
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
 	<div class="phase-banner">
-      <p>
-        <strong class="phase-tag">BETA</strong>This is a new service <span>&nbsp;- your <a target="_blank" href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a> will help us to improve it.</span>
-      </p>
-  	</div>
-  	<div class="grid-row">
-    	<div class="column-full">
-      		<a href="javascript:history.go(-1)" class="link-back">Back</a>
-      		<span style="float:right; font-size:16px; margin-top: 30px;">
-        	<span style="margin-right:10px;">Alice.Aardvark@nhs.net</span>   <a href="/common-pages/ms-sign-out">Sign out</a>   <span style="margin: 0px 10px;">|</span> <a href="/common-pages/help" target="_blank" rel="noopener noreferrer">Help</a> 
-      		</span> 
-    	</div>
-  	</div>
-  	<div class="grid-row">
-  		<div class="column-two-thirds">
-  			<div class="form">
-		  		<form id="appform" role="form" method="post">
-		  			<fieldset>
+		<p>
+			<strong class="phase-tag">BETA</strong>This is a new service <span>&nbsp;- your <a target="_blank"
+					href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a>
+				will help us to improve it.</span>
+		</p>
+	</div>
+	<div class="grid-row">
+		<div class="column-full">
+			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+			<span style="float:right; font-size:16px; margin-top: 30px;">
+				<span style="margin-right:10px;">Alice.Aardvark@nhs.net</span> <a href="/common-pages/ms-sign-out">Sign
+					out</a> <span style="margin: 0px 10px;">|</span> <a href="/common-pages/help" target="_blank"
+					rel="noopener noreferrer">Help</a>
+			</span>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div class="form">
+				<form id="appform" role="form" method="post">
+					<fieldset>
 						<h1 class="heading-large">
 							<span class="heading-secondary">Apply for a maternity exemption certificate</span>
 							Application details
-			   		 	</h1>
-					    <!-- <h2 class="heading-medium">Your details</h2> -->
-					    <div class="form-group">
-					    	<label class="form-label-bold" for="first-name" id="first-name-label">Mother's first name</label>
-					    	<input id="first-name" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
-					    </div>
-					     <div class="form-group">
-					    	<label class="form-label-bold" for="last-name" id="last-name-label">Mother's last name</label>
-					    	<input id="last-name" class="form-control" type="text" max-length="30" autocomplete="off" aria-required="false">
-					    </div>
+						</h1>
+						<!-- <h2 class="heading-medium">Mother's details</h2> -->
 						<div class="form-group">
-					    	<label class="form-label-bold" for="Telephone" id="first-name-label">Mother's date of birth</label>
-					    	<span class="form-hint">
-					    		For example, 31/03/1980
-					    	</span>
-					    	<input id="Telephone" class="form-control" type="tel" max-length="30" autocomplete="off" aria-required="false">
-					    </div>
-			    		<div class="form-group">
-					    	<label class="form-label-bold" for="care" id="care-label">Mother's NHS number</label>
-					    	<input id="care" class="form-control" type="text" max-length="10" autocomplete="off" aria-required="false">
-					    </div>
-					    
-					    
-					     <div class="form-group">
-					    	<label class="form-label-bold" for="baby-date" id="first-name-label">Due date or baby's birth date</label>
-					    	<span class="form-hint">
-					    		For example, 31/03/2018
-					    	</span>
-					    	<input id="baby-date" class="form-control" type="tel" max-length="30" autocomplete="off" aria-required="false">
-					    </div>
-            		</fieldset>
-				</form>	
+							<label class="form-label-bold" for="first-name" id="first-name-label">Mother's first
+								name</label>
+							<input id="first-name" class="form-control" type="text" max-length="30" autocomplete="off"
+								aria-required="false">
+						</div>
+						<div class="form-group">
+							<label class="form-label-bold" for="last-name" id="last-name-label">Mother's last
+								name</label>
+							<input id="last-name" class="form-control" type="text" max-length="30" autocomplete="off"
+								aria-required="false">
+						</div>
+						<div class="form-group">
+								<label class="form-label-bold" for="care" id="care-label">Mother's NHS number</label>
+								<input id="care" class="form-control" type="text" max-length="10" autocomplete="off"
+									aria-required="false">
+							</div>
+						<fieldset>
+
+							<div class="form-label-bold" for="DOB" id="dateofbirth-label">Mother's date of birth</div>
+
+							<span>
+								<p class="form-hint">For example, 31 03 2018</p>
+							</span>
+							<div class="form-date">
+								<div class="form-group form-group-day">
+									<label class="form-label" for="jobstartdateday">Day</label>
+									<input class="form-control" id="jobstartdateday" name="jobstartdateday" type="text"
+										pattern="[0-9]*" min="0" max="31">
+								</div>
+
+								<div class="form-group form-group-month">
+									<label class="form-label" for="jobstartdatemonth">Month</label>
+									<input class="form-control" id="jobstartdatemonth" name="jobstartdatemonth"
+										type="text" pattern="[0-9]*" min="0" max="12">
+								</div>
+
+								<div class="form-group form-group-year">
+									<label class="form-label" for="jobstartdateyear">Year</label>
+									<input class="form-control" id="jobstartdateyear" name="jobstartdateyear"
+										type="text" pattern="[0-9]*" min="0" max="2016">
+								</div>
+							</div>
+
+						</fieldset>
+
+					<br>
+
+
+
+						
+
+
+
+						<label class="form-label-bold" for="DOB" id="dateofbirth-label">Due date or baby's birth date
+						</label>
+
+						<span>
+							<p class="form-hint">For example, 31 03 2018</p>
+						</span>
+						<div class="form-date">
+							<div class="form-group form-group-day">
+								<label class="form-label" for="jobstartdateday">Day</label>
+								<input class="form-control" id="jobstartdateday" name="jobstartdateday" type="text"
+									pattern="[0-9]*" min="0" max="31">
+							</div>
+
+							<div class="form-group form-group-month">
+								<label class="form-label" for="jobstartdatemonth">Month</label>
+								<input class="form-control" id="jobstartdatemonth" name="jobstartdatemonth" type="text"
+									pattern="[0-9]*" min="0" max="12">
+							</div>
+
+							<div class="form-group form-group-year">
+								<label class="form-label" for="jobstartdateyear">Year</label>
+								<input class="form-control" id="jobstartdateyear" name="jobstartdateyear" type="text"
+									pattern="[0-9]*" min="0" max="2016">
+							</div>
+						</div>
+
+
+
+
+
+					</fieldset>
+
+				</form>
+				<br>
+				<br>
 				<div class="form-group">
-          			<a class="button" href="method" id="next">Continue</a>
-        		</div>    
+					<a class="button" href="method" id="next">Continue</a>
+				</div>
 			</div>
- 		</div>
+		</div>
 	</div>
 </main>
 
 {% endblock %}
-
-
