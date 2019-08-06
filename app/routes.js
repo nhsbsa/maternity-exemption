@@ -22,23 +22,23 @@ router.get(/email-account-handler/, function (req, res) {
 
 router.get(/emailconfirm-handler/, function (req, res) {
   if (req.query.emailconfirm == 'yes') {
-    res.redirect('check-answer-mother');
+    res.redirect('checkansmother');
   } else if (req.query.emailconfirm == 'no') {
-    res.redirect('mother-email-address');
+    res.redirect('motheremail');
   }
 });
 
 //signed/mother-email-address
 
 router.get(/email-handler/, function (req, res) {
-  if (req.query.email) {
-    res.redirect('email-confirm');
+  if (req.query.motheremail) {
+    res.redirect('emailconfirm');
   } else if (req.query.emailconfirm == 'emailconfirm') {
-    res.redirect('check-answer-mother');
-  } else if (req.query.email && req.query.emailconfirm) {
-    res.redirect('check-answer-mother');
+    res.redirect('checkansmother');
+  } else if (req.query.motheremail && req.query.emailconfirm) {
+    res.redirect('checkansmother');
   } else {
-    res.redirect('mother-email-address');
+    res.redirect('motheremail');
   }
 });
 
