@@ -8,51 +8,49 @@ NHSBSA Matex prototype
 
 <main id="content" role="main">
 	<div class="phase-banner">
-      <p>
-        <strong class="phase-tag">BETA</strong>This is a new service <span>&nbsp;- your <a target="_blank" href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a> will help us to improve it.</span>
-      </p>
-  	</div>
-  	<div class="grid-row">
-    	<div class="column-full">
-      		<a href="javascript:history.go(-1)" class="link-back">Back</a>
-      		<span style="float:right; font-size:16px; margin-top: 30px;">
-       		<span style="margin-right:10px;">Alice.Aardvark@nhs.net</span>   <a href="/common-pages/ms-sign-out">Sign out</a>   <span style="margin: 0px 10px;">|</span> <a href="/common-pages/help" target="_blank" rel="noopener noreferrer">Help</a> 
-      		</span> 
-    	</div>
-  	</div>
-  	<div class="grid-row">
-  		<div class="column-two-thirds">
-  			<div class="form">
-		  		<h1 class="heading-large">
+		<p>
+			<strong class="phase-tag">BETA</strong>This is a new service <span>&nbsp;- your <a target="_blank"
+					href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a>
+				will help us to improve it.</span>
+		</p>
+	</div>
+	<div class="grid-row">
+		<div class="column-full">
+			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+			<span style="float:right; font-size:16px; margin-top: 30px;">
+				<span style="margin-right:10px;">Alice.Aardvark@nhs.net</span> <a href="/common-pages/ms-sign-out">Sign
+					out</a> <span style="margin: 0px 10px;">|</span> <a href="/common-pages/help" target="_blank"
+					rel="noopener noreferrer">Help</a>
+			</span>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div class="form">
+				<h1 class="heading-large">
 					<span class="heading-secondary">Apply for a maternity exemption certificate</span>
 					Mother's email address
-			    </h1>
-			    <form id="appform" role="form" method="post">
-					<fieldset>
-				    	<legend class="visually-hidden">Is the mother present?</legend>
-						<form action="email-handler" method="get" class="form">
-						
+				</h1>
+				<form id="appform" role="form" method="post"></form>
+				<fieldset>
+
+					<form action="email-handler" method="get" class="form">
+
 						<div class="form-group">
-								  <label class="form-label" for="email">Email address</label>
-								  <p class="form-hint">An incorrect email address will prevent the mother from receiving her exemption</p>
-								  <input class="form-control" id="email" name="email" type="text" value="{{ data['email'] }}">
-								</div>
-						
-						
-
-							  
-
-								
+							<label class="form-label" for="email">Email address</label>
+							<p class="form-hint">An incorrect email address will prevent the mother from receiving her
+								exemption</p>
+							<input class="form-control" id="email" name="email" type="text" value="{{ data['email'] }}">
+						</div>
 
 
-					</fieldset>
-					<a class="button" href="emailconfirm" id="next">Continue</a>
-        		</form>
-			</div>		
- 		</div>
+
+				</fieldset>
+				<a class="button" href="emailconfirm" id="next">Continue</a>
+				</form>
+			</div>
+		</div>
 	</div>
 </main>
 
 {% endblock %}
-
-

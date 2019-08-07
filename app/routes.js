@@ -6,7 +6,7 @@ router.get('/', function (req, res) {
   res.render('index')
 })
 
-
+//new-registration
 
 router.get(/email-account-handler/, function (req, res) {
   if (req.query.radiocontactgroup == 'Yes') {
@@ -18,7 +18,28 @@ router.get(/email-account-handler/, function (req, res) {
   }
 });
 
-//signedin/email-confirm
+
+
+//*******Signedin****************
+
+
+
+//motheremail
+
+router.get(/email-handler/, function (req, res) {
+  if (req.query.email) {
+    res.redirect('emailconfirm');
+  } else if (req.query.emailconfirm == 'emailconfirm') {
+    res.redirect('checkansmother');
+  } else if (req.query.email && req.query.emailconfirm) {
+    res.redirect('checkansmother');
+  } else {
+    res.redirect('motheremail');
+  }
+});
+
+
+//emailconfirm
 
 router.get(/emailconfirm-handler/, function (req, res) {
   if (req.query.emailconfirm == 'yes') {
@@ -28,19 +49,8 @@ router.get(/emailconfirm-handler/, function (req, res) {
   }
 });
 
-//signed/mother-email-address
 
-router.get(/email-handler/, function (req, res) {
-  if (req.query.motheremail) {
-    res.redirect('emailconfirm');
-  } else if (req.query.emailconfirm == 'emailconfirm') {
-    res.redirect('checkansmother');
-  } else if (req.query.motheremail && req.query.emailconfirm) {
-    res.redirect('checkansmother');
-  } else {
-    res.redirect('motheremail');
-  }
-});
+
 
 
 
