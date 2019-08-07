@@ -31,7 +31,7 @@ router.get(/email-handler/, function (req, res) {
     res.redirect('emailconfirm');
   } else if (req.query.emailconfirm == 'emailconfirm') {
     res.redirect('checkansmother');
-  } else if (req.query.email && req.query.emailconfirm) {
+  } else if (req.query.email && req.query.emailconfirm=='emailconfirm') {
     res.redirect('checkansmother');
   } else {
     res.redirect('motheremail');
