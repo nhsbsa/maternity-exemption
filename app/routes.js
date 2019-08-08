@@ -19,9 +19,9 @@ router.get(/email-account-handler/, function (req, res) {
 });
 
 
-
-//*******Signedin****************
-
+//*                      *
+//*******Signedin*********
+//*                      *
 
 
 //motheremail
@@ -49,9 +49,11 @@ router.get(/emailconfirm-handler/, function (req, res) {
   }
 });
 
+//mother-nhsnum
 
-
-
+router.get(/nhsnum-handler/, function (req, res) {
+  res.redirect('../signed-in/checkansmother');
+});
 
 
 
