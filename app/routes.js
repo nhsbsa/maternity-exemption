@@ -51,9 +51,21 @@ router.get(/emailconfirm-handler/, function (req, res) {
 
 //mother-nhsnum
 
-router.get(/nhsnum-handler/, function (req, res) {
-  res.redirect('../signed-in/checkansmother');
-});
+
+router.get(/nhsnum-handler/, function (req, res) {  
+  if (req.query.nhsnum) {
+    res.redirect('motherdob');
+  }
+    else {
+      res.redirect('mother-nhsnum')}
+  })
+  ;
+  
+  
+
+
+
+
 
 
 
