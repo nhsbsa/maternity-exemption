@@ -28,7 +28,7 @@ router.get(/email-account-handler/, function (req, res) {
 
 router.get(/email-account-iteration1-handler/, function (req, res) {
   if (req.query.radiocontactgroup == 'Yes') {
-    res.redirect('../esr-match-iteration1/nmc-gmc');
+    res.redirect('../esr-match-iteration1/emailconfirm');
   } else if (req.query.radiocontactgroup == 'No') {
     res.redirect('../esr-match-iteration1/nonhsemail');
   } else {
@@ -36,6 +36,13 @@ router.get(/email-account-iteration1-handler/, function (req, res) {
   }
 });
 
+router.get(/emailconfirm-iteration1-handler/, function (req, res) {
+  if (req.query.emailconfirm == 'yes') {
+    res.redirect('nmc-gmc');
+  } else if (req.query.emailconfirm == 'no') {
+    res.redirect('nhsmail');
+  }
+});
 
 
 
