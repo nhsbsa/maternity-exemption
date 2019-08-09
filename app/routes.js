@@ -28,11 +28,11 @@ router.get(/email-account-handler/, function (req, res) {
 
 router.get(/email-account-iteration1-handler/, function (req, res) {
   if (req.query.radiocontactgroup == 'Yes') {
-    res.redirect('../esr-match/esr-match-iteration1/nmc-gmc');
+    res.redirect('../esr-match-iteration1/nmc-gmc');
   } else if (req.query.radiocontactgroup == 'No') {
-    res.redirect('../esr-match/esr-match-iteration1/nonhsemail');
+    res.redirect('../esr-match-iteration1/nonhsemail');
   } else {
-    res.redirect('../esr-match/esr-match-iteration1/nhsmail');
+    res.redirect('../esr-match-iteration1/nhsmail');
   }
 });
 
