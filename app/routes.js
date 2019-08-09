@@ -6,9 +6,9 @@ router.get('/', function (req, res) {
   res.render('index')
 })
 
-//*                      *
+//******************************************
 //*******NEW-REGISTRATION/ESR-MATCH*********
-//*  
+//****************************************** 
 
 router.get(/email-account-handler/, function (req, res) {
   if (req.query.radiocontactgroup == 'Yes') {
@@ -22,9 +22,9 @@ router.get(/email-account-handler/, function (req, res) {
 
 
 
-//*                      *
+///****************************************************
 //*******NEW-REGISTRATION/ESR-MATCH_ITERATION1*********
-//*                      *
+///**************************************************** 
 
 router.get(/email-account-iteration1-handler/, function (req, res) {
   if (req.query.radiocontactgroup == 'Yes') {
@@ -47,9 +47,8 @@ router.get(/emailconfirm-iteration1-handler/, function (req, res) {
 
 
 
-
 ///************************                     
-//*******SIGNEDIN*********
+//*******SIGNEDIN**********
 //*************************                       
 
 
