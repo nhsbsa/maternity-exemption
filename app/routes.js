@@ -6,7 +6,9 @@ router.get('/', function (req, res) {
   res.render('index')
 })
 
-//new-registration
+//*                      *
+//*******NEW-REGISTRATION/ESR-MATCH*********
+//*  
 
 router.get(/email-account-handler/, function (req, res) {
   if (req.query.radiocontactgroup == 'Yes') {
@@ -19,9 +21,29 @@ router.get(/email-account-handler/, function (req, res) {
 });
 
 
+
 //*                      *
-//*******Signedin*********
+//*******NEW-REGISTRATION/ESR-MATCH_ITERATION1*********
 //*                      *
+
+router.get(/email-account-iteration1-handler/, function (req, res) {
+  if (req.query.radiocontactgroup == 'Yes') {
+    res.redirect('../esr-match/esr-match-iteration1/nmc-gmc');
+  } else if (req.query.radiocontactgroup == 'No') {
+    res.redirect('../esr-match/esr-match-iteration1/nonhsemail');
+  } else {
+    res.redirect('../esr-match/esr-match-iteration1/nhsmail');
+  }
+});
+
+
+
+
+
+
+///************************                     
+//*******SIGNEDIN*********
+//*************************                       
 
 
 //motheremail
@@ -54,15 +76,17 @@ router.get(/emailconfirm-handler/, function (req, res) {
 
 router.get(/nhsnum-handler/, function (req, res) {  
   if (req.query.nhsnum) {
-    res.redirect('motherdob');
+    res.redirect('mother-dob');
   }
-    else {
+  else if (req.query.nhsnum == 'emailconfirm') {
+    res.redirect('checkansmother');
+  }
+  else {
       res.redirect('mother-nhsnum')}
   })
   ;
   
   
-
 
 
 
