@@ -1,0 +1,88 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+NHSBSA Matex email prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+	<div class="phase-banner">
+		<p>
+			<strong class="phase-tag">BETA</strong>This is a new service <span>- your <a target="_blank"
+					href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a>
+				will help us to improve it.</span>
+		</p>
+	</div>
+	<div class="grid-row">
+		<div class="column-full">
+			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+			<span style="float:right; font-size:16px; margin-top: 30px;">
+				<a href="/common-pages/help" target="_blank" rel="noopener noreferrer">Help</a>
+			</span>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="email-account-iteration1-handler" method="get" class="form">
+
+				<h1 class="heading-large">
+					<span class="heading-secondary">Register to apply for a maternity exemption
+						certificate</span>
+					Do you have an NHS email account?
+				</h1>
+				<span class="form-hint"><br>
+					This will be the email and password you use to access your NHS emails.
+				</span>
+
+
+				<div class="form-group">
+					<fieldset>
+						<div class="multiple-choice" data-target="nhs-mail">
+							<input id="example-nhs-email" type="radio" name="radiocontactgroup" value="Yes">
+							<label for="example-nhs-email">Yes</label>
+						</div>
+						<div class="panel panel-border-narrow js-hidden" id="nhs-mail">
+							<label class="form-label" for="contact-email">NHS Email address</label>
+							<input class="form-control" name="contact-email" type="text" id="email">
+						</div>
+
+
+						<div class="multiple-choice" data-target="no-nhs-mail">
+							<input id="example-no-nhs-mail" type="radio" name="radiocontactgroup" value="No">
+							<label for="example-no-nhs-mail">No</label>
+						</div>
+						<div class="panel panel-border-narrow js-hidden" id="no-nhs-mail">
+							<label class="form-label" for="contact-phone">If you're working in a trust or organisation
+								that uses NHSmail, you can contact your Local Administrator or IT Helpdesk to set up an
+								account.
+								<br>For more information on joining NHSmail visit <a
+									href="https://support.nhs.net/knowledge-base/registering-for-an-nhsmail-account/">NHS
+									Mail Page</a></label>
+						</div>
+					</fieldset>
+
+
+				</div>
+
+				
+
+				<div class="form-group">
+					<input class="button" type="submit" value="Continue">
+				</div>
+			</form>
+
+			
+
+
+		</div>
+	</div>
+
+
+
+
+
+</main>
+
+{% endblock %}
