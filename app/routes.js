@@ -44,6 +44,9 @@ router.get(/emailconfirm-iteration1-handler/, function (req, res) {
   }
 });
 
+router.get(/nmc-iteration1-handler/, function (req, res) {
+    res.redirect('../esr-match-iteration1/check-answer-nmc');
+});
 
 
 
