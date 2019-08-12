@@ -52,6 +52,32 @@ router.get(/nmc-iteration1-handler/, function (req, res) {
 }
 });
 
+///****************************************************
+//*******NEW-REGISTRATION/ESR-MATCH-NMC****************
+///**************************************************** 
+
+router.get(/email-account-nmc-handler/, function (req, res) {
+  if (req.query.radiocontactgroup == 'Yes') {
+    res.redirect('../esr-match-nmc/emailconfirm');
+  } else if (req.query.radiocontactgroup == 'No') {
+    res.redirect('../esr-match-nmc/nonhsemail');
+  } else {
+    res.redirect('../esr-match-nmc/nhsmail');
+  }
+});
+
+router.get(/emailconfirm-nmc-handler/, function (req, res) {
+  if (req.query.emailconfirm == 'yes') {
+    res.redirect('register-nmc');
+  } else if (req.query.emailconfirm == 'no') {
+    res.redirect('nhsmail');
+  }
+});
+
+
+
+
+
 
 
 ///************************                     
