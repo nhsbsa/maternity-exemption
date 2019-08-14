@@ -1,0 +1,54 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  NHSBSA Matex Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="phase-banner">
+      <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service 
+      <span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
+      </p> 
+    </div>
+
+<a href="javascript:history.go(-1)" class="link-back">Back</a>
+    
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+            <header class="page-header">
+            <p class="page-header--sub heading-secondary">Register to apply maternity exemption certificate</p>
+            <h1 class="page-header--lede heading-large">What is your NHSmail address?</h1>
+            </header>
+
+      <form action="emailnhs-handler" method="get" class="form">
+
+        <legend class="visuallyhidden">What’s your email?</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label-bold" for="emailnhs">NHSmail address</label>
+              <input class="form-control" id="emailnhs" name="emailnhs" type="text">
+            </div>
+            
+
+            
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
