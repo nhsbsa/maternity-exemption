@@ -38,7 +38,7 @@ router.get(/email-account-iteration1-handler/, function (req, res) {
 
 router.get(/emailconfirm-iteration1-handler/, function (req, res) {
   if (req.query.emailconfirm == 'yes') {
-    res.redirect('nmc-gmc');
+    res.redirect('register-nmc');
   } else if (req.query.emailconfirm == 'no') {
     res.redirect('nhsmail');
   }
