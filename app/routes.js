@@ -82,18 +82,18 @@ router.get(/nhsmail-handler/, function (req, res) {
   if (req.query.radiocontactgroup == 'Yes') {
     res.redirect('../email-validation/emailnhs');
   } else if (req.query.radiocontactgroup == 'No') {
-    res.redirect('../esr-match-iteration1/nonhsemail');
+    res.redirect('../email-validation/nonhsemail');
   } else {
-    res.redirect('../esr-match-iteration1/nhsmail');
+    res.redirect('../email-validation/nhsmail');
   }
 });
 
 
 router.get(/emailnhs-handler/, function (req, res) {
-  if (req.query.emailnhs == 'yes') {
-    res.redirect('emailconfirm');
-  } else if (req.query.emailnhs== 'no') {
-    res.redirect('nhsmail');
+  if (req.query.emailnhs) {
+    res.redirect('../email-validation/emailconfirm');
+  } else  {
+    res.redirect('../email-validation/emailnhs');
   }
 });
 
