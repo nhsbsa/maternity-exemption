@@ -15,56 +15,63 @@ NHSBSA Matex Done Prototype
     </p>
   </div>
   <form action="emailnhs-handler" method="get" class="form">
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <div class="done-panel">
-        <h1 class="heading-xlarge"><span id=""></span>Confirm your email</h1>
-        <h2 class="heading-large"><span class="heading-secondary" style="color: white;">A verification email has been
-            sent to '{{ data['emailnhs'] }}' 
-          </span></h2>
-      </div>
-      <h2 class="heading-medium">What happens next</h2>
-      <p>You need to click the link in your verification email to proceed with your registration.</p>
-      <p>Email will take between 5-15 minutes</p>
-      <p>The verification email will expire in 24 hours.</p>
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <div class="done-panel">
+          <h1 class="heading-xlarge"><span id=""></span>Confirm your email</h1>
+          <h2 class="heading-large"><span class="heading-secondary" style="color: white;">A verification email has been
+              sent to '{{ data['emailnhs'] }}'
+            </span></h2>
+        </div>
+        <h2 class="heading-medium">What happens next</h2>
 
-      
+        <ul>
+        
+          <li>You need to click the link in your verification email to proceed with your registration.</li>
+          <li>Email will take between 5-15 minutes</li>
+          <li>The verification email will expire in 24 hours.If it expires you will need to re-start this proces.</li>
+          </ul>
+          <p>>You can close this site and follow the instructions in your verification email to continue to register.</p
+          
+       
 
-      <details class="details-login" role="group">
-        <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">I have not
-            received the email</span></summary>
-        <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
-          <p>Check your junk / spam folder. If the email is not there you can request to 
+
+        <details class="details-login" role="group">
+          <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">I have
+              not
+              received the email</span></summary>
+          <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+            <p>Check your junk / spam folder. If the email is not there you can request to
               <a href="email-sent-again.html">re-send email</a> </p>
 
 
-      </details>
-      
-      <details class="details-login" role="group">
-        <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">Use a
-            different NHSmail address</span></summary>
+        </details>
 
-            <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
-                <label class="form-label" for="emailnhs">NHSmail address</label>
-                <input class="form-control" id="emailnhs" name="emailnhs" type="text">
-              </div>
-             
+        <details class="details-login" role="group">
+          <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">Use a
+              different NHSmail address</span></summary>
 
-                  <div class="form-group">
-                      <input class="button" type="submit" value="Next">
-                    </div>
-      </details>
+          <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+            <label class="form-label" for="emailnhs">NHSmail address</label>
+            <input class="form-control" id="emailnhs" name="emailnhs" type="text">
+          </div>
 
-     
-      <br>
-      <br>
 
-      <div style="background-color:#dee0e2; padding:20px 40px;">
-        <h3 class="heading-small">PROTOTYPE ONLY</h3>
-        <p>Click <a href="/">here</a> to return to the index page.</p>
+          <div class="form-group">
+            <input class="button" type="submit" value="Next">
+          </div>
+        </details>
+
+
+        <br>
+        <br>
+
+        <div style="background-color:#dee0e2; padding:20px 40px;">
+          <h3 class="heading-small">PROTOTYPE ONLY</h3>
+          <p>Click <a href="/">here</a> to return to the index page.</p>
+        </div>
       </div>
     </div>
-  </div>
 
 </main>
 
