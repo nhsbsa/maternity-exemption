@@ -23,23 +23,36 @@ NHSBSA Matex Done Prototype
             </span></h2>
       </div>
       <h2 class="heading-medium">What happens next</h2>
+      <p>You need to click the link in your verification email to proceed with your registration.</p>
       <p>Email will take between 5-15 minutes</p>
       <p>The verification email will expire in 24 hours.</p>
 
-      <p></p>
-      <p> </a> </p>
-      
+     
+      <form action="emailnhs-handler" method="get" class="form">
       <details class="details-login" role="group">
         <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">I have not received the email</span></summary>
         <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
-          <p>Check your junk / spam folder. If the email is not there you can : </p>
-          <ul class ='list-bullet'>
-            <li><a href="email-sent-again.html">re-send email again</a></li>
-            <li><a href="emailnhs.html">use a different email address</a href></li>
-          </ul>
+          <p>Check your junk / spam folder. If the email is not there you can request to  <a href="email-sent-again.html">re-send email again</a> </p>
          
         </div> 
       </details>
+
+      <details class="details-login" role="group">
+          <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">Use a
+              different NHSmail address</span></summary>
+  
+              <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+                  <label class="form-label" for="emailnhs">NHSmail address</label>
+                  <input class="form-control" id="emailnhs" name="emailnhs" type="text">
+                </div>
+               
+  
+                    <div class="form-group">
+                        <input class="button" type="submit" value="Next">
+                      </div>
+        </details>
+
+
 
       <br>
       <br>
