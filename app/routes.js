@@ -97,6 +97,13 @@ router.get(/emailnhs-handler/, function (req, res) {
   }
 });
 
+router.get(/emailconfirmnhs-handler/, function (req, res) {
+  if (req.query.emailconfirm == 'yes') {
+    res.redirect('../email-validation/email-sent');
+  } else if (req.query.emailconfirm == 'no') {
+    res.redirect('../email-validation/emailnhs');
+  }
+});
 
 ///************************                     
 //*******SIGNEDIN**********
