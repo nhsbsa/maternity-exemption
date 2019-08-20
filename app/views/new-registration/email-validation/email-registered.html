@@ -15,57 +15,37 @@ NHSBSA Matex Done Prototype
     </p>
   </div>
   <form action="emailnhs-handler" method="get" class="form">
-    <div class="grid-row">
-      <div class="column-two-thirds">
-      
-        <h1 class="heading-large">
-          <span class="heading-secondary">Register to apply for a maternity exemption
-            certificate</span>
-          You have registered to use this service.
-
-        </h1>
-        <p>We have sent an email with a verification link to <span style="font-weight:bold">'{{ data['emailnhs'] }}'</span>. Please allow 5-10 minutes for
-          this message to arrive.</p>
-
-        <h2 class="heading-medium">What happens next</h2>
-
-        <ul class='list list-bullet'>
-          <li>You need to click the link in your verification email to proceed with your registration.</li>
-          <li>The verification email will expire in 24 hours.</li>
-        </ul>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="done-panel">
+        <h1 class="heading-large"><span id=""></span>You have already registered with this NHSmail address</h1>
+       
+      </div>
+      <h2 class="heading-medium">What happens next</h2>
+      <p>Use your NHSmail and password to log in to apply maternity exemption certificate on behalf of new and expectant mothers. </p>
+    
+    
+      <p>
+          <a class="button" href="#" role="button">Sign in</a>
+        </p>
 
         <details class="details-login" role="group">
-          <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">I have
-              not received the email</span></summary>
-          <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
-            <p>Check your junk / spam folder. If the email is not there you can request to
-              <a href="email-sent-again.html">re-send email</a> </p>
-        </details>
+            <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">I have forgotten my NHSmail password</span></summary>
+            <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+              <p> Choose the Forgotten Password link in NHSMail sign in page and follow the on screen prompts to reset your password. </p>
+              <p> </p>
+            </div>
+          </details>
 
-        <details class="details-login" role="group">
-          <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">Use a
-              different NHSmail address</span></summary>
+      <br>
+      <br>
 
-          <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
-            <label class="form-label" for="emailnhs">NHSmail address</label>
-            <input class="form-control" id="emailnhs" name="emailnhs" type="text">
-          </div>
-
-
-          <div class="form-group">
-            <input class="button" type="submit" value="Next">
-          </div>
-        </details>
-
-        <br>
-        <br>
-
-        <div style="background-color:#dee0e2; padding:20px 40px;">
-          <h3 class="heading-small">PROTOTYPE ONLY</h3>
-          <p>Click <a href="/">here</a> to return to the index page.</p>
-        </div>
+      <div style="background-color:#dee0e2; padding:20px 40px;">
+        <h3 class="heading-small">PROTOTYPE ONLY</h3>
+        <p>Click <a href="/">here</a> to return to the index page.</p>
       </div>
     </div>
+  </div>
 
 </main>
 
