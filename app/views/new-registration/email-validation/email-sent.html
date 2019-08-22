@@ -24,15 +24,11 @@ NHSBSA Matex Done Prototype
           Check your email
 
         </h1>
-        <p>We have sent an email with a verification link to <span style="font-weight:bold">{{ data['emailnhs'] }}</span>. Please allow 5-10 minutes for
-          this message to arrive.</p>
+        <p>We have sent an email with a verification link to <span style="font-weight:bold">{{ data['emailnhs'] }}</span>.</p>
 
         <h2 class="heading-medium">What happens next</h2>
-      <p>You are nearly there. To complete your registration, you need to :</p>
-        <ul class='list list-bullet'>
-          <li>Check your NHSmail account for the email</li>
-          <li>Follow the verification link in the email to proceed with your registration </li>
-        </ul>
+      <p>You need to check your NHSmail and follow the verification link to continue with your registration.</p>
+       
         <p>The verification email will expire within 24 hours.</p>
         
 
@@ -41,8 +37,12 @@ NHSBSA Matex Done Prototype
           <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">I have
               not received the email</span></summary>
           <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
-            <p>Check your junk / spam folder. If the email is not there you can 
-              <a href="email-sent-again.html">re-send the verification email</a> </p>
+              <ul class='list list-bullet'>
+                  <li>Allow 5-10 minutes for this message to arrive</li>
+                  <li>Check your junk / spam folder. If the email is not there you can 
+                      <a href="email-sent-again.html">resend the verification email</a> </p> </li>
+                  </ul>
+          
         </details>
 
         <details class="details-login" role="group">
