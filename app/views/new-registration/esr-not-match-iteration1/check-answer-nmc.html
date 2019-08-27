@@ -5,7 +5,14 @@ NHSBSA Matex Check your answer prototype
 {% endblock %}
 
 {% block content %}
-
+<style>
+    .no-bg {
+      background: none;
+    }
+    .no-bg:hover {
+      border: 1px solid white;
+    }
+    </style>
 <main id="content" role="main">
   <div class="phase-banner">
     <p>
@@ -86,25 +93,67 @@ NHSBSA Matex Check your answer prototype
             </dl>
             <br>
          
-
             <div class="notice form-group">
-              <i class="icon icon-important">
-                <span class="visually-hidden">Warning</span>
-              </i>
-              <strong class="bold-medium">
-                Confirmation
-              </strong>
-              <p></p>
-            </div>
+                <i class="icon icon-important">
+                  <span class="visually-hidden">Warning</span>
+                </i>
+                <strong class="bold-medium">
+                  Confirmation
+                </strong>
+                <p></p>
+              </div>
 
-            <div class="multiple-choice multiple-radio">
-              <input id="confirm" name="confirm" type="checkbox" value="true">
-              <label for="confirm">I confirm that the information provided is correct 
-                  <p>I understand that:
-                      <li> the information submitted will be checked by ESR </li>
-                      <li> my NMC PIN will be recorded against my NHSmail account</li></p>
+
+
+
+            <style>
+                .declaration {
+                    position: relative;
+                    overflow: hidden;
+                    border: 3px solid #bfc1c3;
+                    margin-top: 15px;
+                    margin-bottom: 35px;
+                    padding-top: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 15px;
+                }
+                .declaration:before {
+                    content: "Confirmation";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+                    font-family: Arial, sans-serif;
+                    font-weight: 400;
+                    text-transform: none;
+                    font-size: 16px;
+                    line-height: 1.25;
+                    background: #bfc1c3;
+                    color: white;
+                }
+                </style>
+                <div class="declaration">
+                               <br>
+                               <p>I understand that:
+                               </p><ol class="list list-bullet">
+                               <li>the information submitted will be checked by ESR</li>
+                               <li>my NMC PIN will be recorded against my NHSmail account</li>
+                               
+                               
+                            </ol></div>
+
+          
+
+            <div class="form-group">
+                <div class="multiple-choice multiple-radio no-bg">
+                  <input id="confirm" name="confirm" type="checkbox" value="true">
+                  <label for="confirm">I confirm that the information provided is correct
+                    
+        
                   </label>
-            </div>
+                </div>
+                </div>
             <br>
 
 
