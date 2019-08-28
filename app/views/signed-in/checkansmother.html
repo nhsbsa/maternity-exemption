@@ -24,6 +24,7 @@ NHSBSA Matex prototype
     <div class="column-two-thirds">
       <div class="form">
         <form id="appform" role="form" method="post">
+            <form action="name-mother-handler" method="get" class="form">
           <fieldset>
             <h1 class="heading-large">
               <span class="heading-secondary">Apply for a maternity exemption certificate</span>
@@ -43,7 +44,7 @@ NHSBSA Matex prototype
                       Mother's name
                     </dt>
                   <dd class="cya-answer">
-                    Sarah Phillips
+                      {{ data['first-name'] }} {{ data['last-name'] }}
                   </dd>
                     <dd class="cya-change">
                       <a class="link-right" href="application#first-name">

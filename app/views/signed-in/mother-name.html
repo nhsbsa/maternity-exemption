@@ -28,26 +28,34 @@ NHSBSA Matex prototype
 		<div class="column-two-thirds">
 			<div class="form">
 				<form id="appform" role="form" method="post">
+
+						<form action="name-mother-handler" method="get" class="form">
 					<fieldset>
-							<header class="page-header">
-									<p class="page-header--sub heading-secondary">Issue maternity exemption certificates</p>
-									<h1 class="page-header--lede heading-large">Mother's name</h1>
-									</header>
-						<!-- <h2 class="heading-medium">Mother's details</h2> -->
+						
+						<h1 class="heading-large">
+								<span class="heading-secondary">Issue maternity exemption certificate</span>
+								Mother's name?
+							  </h1>
+					
+						
+						<form action="firstname-handler" method="get" class="form">
+
+								<legend class="visuallyhidden">Mother's name?</legend>
+								<div class="form-text">
+								<div class="form-group">
+
+								  <label class="form-label" for="firstname">First Name</label>
+								  <input class="form-control" id="firstname" name="firstname" type="text" autocomplete="off">
+								</div>
+							
 						<div class="form-group">
-							<label class="form-label" for="first-name" id="first-name-label">First
+							<label class="form-label" for="lastname" >Last
 								name</label>
-							<input id="first-name" class="form-control" type="text" max-length="30" autocomplete="off"
-								aria-required="false">
-						</div>
-						<div class="form-group">
-							<label class="form-label" for="last-name" id="last-name-label">Last
-								name</label>
-							<input id="last-name" class="form-control" type="text" max-length="30" autocomplete="off"
+							<input id="lastname" class="form-control" type="text" name="lastname" max-length="30" autocomplete="off"
 								aria-required="false">
 						</div>
 
-
+					</div>
 					</fieldset>
 
 				</form>

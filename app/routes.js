@@ -107,8 +107,7 @@ router.get(/emailconfirmnhs-handler/, function (req, res) {
 
 ///************************                     
 //*******SIGNEDIN**********
-//*************************                       
-
+//*************************                      
 
 //motheremail
 
@@ -129,7 +128,7 @@ router.get(/email-handler/, function (req, res) {
 
 router.get(/emailconfirm-handler/, function (req, res) {
   if (req.query.emailconfirm == 'yes') {
-    res.redirect('checkansmother');
+    res.redirect('checkansmother-email');
   } else if (req.query.emailconfirm == 'no') {
     res.redirect('motheremail');
   }
