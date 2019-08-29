@@ -109,7 +109,7 @@ router.get(/emailconfirmnhs-handler/, function (req, res) {
 //*******SIGNEDIN**********
 //*************************                      
 
-//motheremail
+//motheremail//
 
 router.get(/email-handler/, function (req, res) {
   if (req.query.email) {
@@ -119,12 +119,12 @@ router.get(/email-handler/, function (req, res) {
   } else if (req.query.email && req.query.emailconfirm=='emailconfirm') {
     res.redirect('checkansmother-email');
   } else {
-    res.redirect('mother-email-test');
+    res.redirect('motheremail');
   }
 });
 
 
-//emailconfirm
+//emailconfirm//
 
 router.get(/emailconfirm-handler/, function (req, res) {
   if (req.query.emailconfirm == 'yes') {
@@ -134,7 +134,7 @@ router.get(/emailconfirm-handler/, function (req, res) {
   }
 });
 
-//mother-nhsnum
+//mother-nhsnum//
 
 
 router.get(/nhsnum-handler/, function (req, res) {  
