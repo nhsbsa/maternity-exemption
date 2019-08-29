@@ -1,0 +1,56 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+NHSBSA Matex Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service
+      <span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <a href="javascript:history.go(-1)" class="link-back">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+        <h1 class="heading-large">
+            <span class="heading-secondary">Issue maternity exemption certificates</span>
+            Mother's email address?
+          </h1>
+
+      <form action="email-handler" method="get" class="form">
+<br>
+        <legend class="visuallyhidden">Mother's email?</legend>
+
+        <div class="form-text">
+
+          <div class="form-group">
+
+            <span class="form-hint">
+              An incorrect email address will prevent the mother from receiving her exemption.
+            </span>
+
+            <input class="form-control" id="email" name="email" type="text">
+          </div>
+
+        </div>
+        </fieldset>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
