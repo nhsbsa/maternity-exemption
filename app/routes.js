@@ -119,7 +119,7 @@ router.get(/email-handler/, function (req, res) {
   } else if (req.query.email && req.query.emailconfirm=='emailconfirm') {
     res.redirect('checkansmother-email');
   } else {
-    res.redirect('motheremail');
+    res.redirect('mother-email-test');
   }
 });
 
@@ -149,7 +149,9 @@ router.get(/nhsnum-handler/, function (req, res) {
   })
   ;
   
-
+///************************                     
+//*****NOT SIGNEDIN********
+//*************************   
 
 // add your routes here
 
