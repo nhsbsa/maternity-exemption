@@ -1,0 +1,71 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+NHSBSA Matex prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+	<div class="phase-banner">
+		<p>
+			<strong class="phase-tag">BETA</strong>This is a new service <span>&nbsp;- your <a target="_blank"
+					href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a>
+				will help us to improve it.</span>
+		</p>
+	</div>
+	<div class="grid-row">
+		<div class="column-full">
+			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+			<span style="float:right; font-size:16px; margin-top: 30px;">
+				<span style="margin-right:10px;">Alice.Aardvark@nhs.net</span> <a href="/common-pages/ms-sign-out">Sign
+					out</a> <span style="margin: 0px 10px;">|</span> <a href="/common-pages/help" target="_blank"
+					rel="noopener noreferrer">Help</a>
+			</span>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<div class="form">
+				<form id="appform" role="form" method="post">
+
+						<form action="name-mother-handler" method="get" class="form">
+					<fieldset>
+						
+						<h1 class="heading-large">
+								<span class="heading-secondary">Issue maternity exemption certificate</span>
+								Mother's name?
+							  </h1>
+					
+						
+						<form action="firstname-handler" method="get" class="form">
+
+								<legend class="visuallyhidden">Mother's name?</legend>
+								<div class="form-text">
+								<div class="form-group">
+
+								  <label class="form-label" for="firstname">First Name</label>
+								  <input class="form-control" id="firstname" name="firstname" type="text" autocomplete="off">
+								</div>
+							
+						<div class="form-group">
+							<label class="form-label" for="lastname" >Last
+								name</label>
+							<input id="lastname" class="form-control" type="text" name="lastname" max-length="30" autocomplete="off"
+								aria-required="false">
+						</div>
+
+					</div>
+					</fieldset>
+
+				</form>
+
+				<div class="form-group">
+					<a class="button" href="mother-nhsnum.html" id="next">Continue</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+{% endblock %}
