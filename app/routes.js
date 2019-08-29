@@ -115,9 +115,9 @@ router.get(/email-handler/, function (req, res) {
   if (req.query.email) {
     res.redirect('emailconfirm');
   } else if (req.query.emailconfirm == 'emailconfirm') {
-    res.redirect('checkansmother');
+    res.redirect('checkansmother-email');
   } else if (req.query.email && req.query.emailconfirm=='emailconfirm') {
-    res.redirect('checkansmother');
+    res.redirect('checkansmother-email');
   } else {
     res.redirect('motheremail');
   }
@@ -142,18 +142,13 @@ router.get(/nhsnum-handler/, function (req, res) {
     res.redirect('mother-dob');
   }
   else if (req.query.nhsnum == 'emailconfirm') {
-    res.redirect('checkansmother');
+    res.redirect('checkansmother-email');
   }
   else {
       res.redirect('mother-nhsnum')}
   })
   ;
   
-  
-
-
-
-
 
 
 // add your routes here

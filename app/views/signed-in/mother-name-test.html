@@ -1,0 +1,78 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+NHSBSA Prototype
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service
+      <span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <div class="grid-row">
+		<div class="column-full">
+			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+			<span style="float:right; font-size:16px; margin-top: 30px;">
+				<span style="margin-right:10px;">Alice.Aardvark@nhs.net</span> <a href="#">Sign
+					out</a> <span style="margin: 0px 10px;">|</span> <a href="/common-pages/help" target="_blank"
+					rel="noopener noreferrer">Help</a>
+			</span>
+		</div>
+	</div>
+
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <header class="page-header">
+        <p class="page-header--sub heading-secondary">Issue maternity exemption certificates</p>
+        <h1 class="page-header--lede heading-large" style="margin-bottom: 0.5555555556em;">Mother's name</h1>
+      </header>
+
+    
+      <form action="firstname-handler" method="get" class="form">
+
+        <div class="form-group">
+          <label class="form-label" for="firstname">First name</label>
+          <input class="form-control" id="firstname" name="firstname" type="text">
+		</div>
+		
+		<form action="lastname-handler" method="get" class="form">
+				<div class="form-group">
+						<label class="form-label" for="lastname">Last name</label>
+						<input class="form-control" id="lastname" name="lastname" type="text">
+					  </div>
+					  
+
+  
+
+					  <div class="form-group">
+							<a class="button" href="mother-nhsnum.html" id="next">Continue</a>
+						</div>
+
+
+
+      </form>
+
+    </div>
+  </div>
+</main>
+</main>
+
+{% endblock %}
