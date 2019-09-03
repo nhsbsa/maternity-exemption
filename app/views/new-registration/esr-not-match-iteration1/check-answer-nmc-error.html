@@ -1,0 +1,179 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+NHSBSA Matex Check your answer prototype
+{% endblock %}
+
+{% block content %}
+<style>
+.no-bg {
+  background: none;
+}
+.no-bg:hover {
+  border: 1px solid white;
+}
+</style>
+
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>This is a new service <span>&nbsp;- your <a target="_blank"
+          href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a>
+        will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="grid-row">
+    <div class="column-full">
+      <a href="javascript:history.go(-1)" class="link-back">Back</a>
+      <span style="float:right; font-size:16px; margin-top: 30px;">
+        <a href="/common-pages/help" target="_blank" rel="noopener noreferrer">Help</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+        <div id="validation" class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
+            <h1 class="heading-medium error-summary-heading" id="error-summary-heading">There is a problem</h1>
+            <ul class="error-summary-list">
+                <li><a href="#confirm">Select I confirm that the information provided is correct to proceed.</a></li>
+            </ul>
+        </div>
+      <div class="form">
+        <form id="appform" role="form" method="post">
+          <fieldset>
+            <h1 class="heading-large">
+              <span class="heading-secondary">Register up to issue maternity exemption certificate service</span>
+              Check your answers
+            </h1>
+          
+            <!-- only add a heading for a list if there is more than one list -->
+
+            <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+            <!--   * `cya-questions-short` for short questions -->
+            <!--   * `cya-questions-long` for long questions -->
+            <!--   * none for single group of q&a -->
+
+            <dl class="govuk-check-your-answers cya-questions-long">
+              <div>
+                <dt class="cya-question">
+                  Last name
+                </dt>
+                <dd class="cya-answer">
+                 Phillips
+                </dd>
+                <dd class="cya-change">
+                  <a class="link-right" href="#">
+                    Change<span class="visually-hidden"> last name</span>
+                  </a>
+                </dd>
+              </div>
+
+              <div>
+                <dt class="cya-question cya-questions-long">
+                  NMC PIN 
+                </dt>
+                <dd class="cya-answer">
+                  99A9999A
+                </dd>
+                <dd class="cya-change">
+                  <a class="link-right" href="#">
+                    Change<span class="visually-hidden"> NMC PIN </span>
+                  </a>
+                </dd>
+              </div>
+
+              <div>
+                <dt class="cya-question">
+                  Date of birth
+                </dt>
+                <dd class="cya-answer">
+                  10 October 1984
+                </dd>
+                <dd class="cya-change">
+                  <a class="link-right" href="#">
+                    Change<span class="visually-hidden">Your DOB</span>
+                  </a>
+                </dd>
+              </div>
+
+            </dl>
+            <br>
+           
+
+            <div class="notice form-group">
+              <i class="icon icon-important">
+                <span class="visually-hidden">Warning</span>
+              </i>
+              <strong class="bold-medium">
+                Confirmation
+              </strong>
+              <p></p>
+            </div>
+
+            <style>
+                .declaration {
+                    position: relative;
+                    overflow: hidden;
+                    border: 3px solid #bfc1c3;
+                    margin-top: 15px;
+                    margin-bottom: 35px;
+                    padding-top: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 15px;
+                }
+                .declaration:before {
+                    content: "Confirmation";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+                    font-family: Arial, sans-serif;
+                    font-weight: 400;
+                    text-transform: none;
+                    font-size: 16px;
+                    line-height: 1.25;
+                    background: #bfc1c3;
+                    color: white;
+                }
+                </style>
+                <div class="declaration">
+                               <br>
+                               <p>I understand that:
+                               </p><ol class="list list-bullet">
+                               <li>the information submitted will be checked by ESR</li>
+                               <li>my NMC PIN will be recorded against my NHSmail account</li>
+                               
+                               
+                            </ol></div>
+
+
+                            <div class="form-group">
+            <div class="multiple-choice multiple-radio no-bg">
+              <input id="confirm" name="confirm" type="checkbox" value="true">
+              <label for="confirm">I confirm that the information provided is correct
+                
+    
+              </label>
+            </div>
+            </div>
+
+            <br>
+            <div class="form-group">
+              <a class="button" href="reg-done" id="submit">Confirm and submit</a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <style>
+    .link-right {
+      margin-right: 15px;
+    }
+  </style>
+</main>
+
+{% endblock %}
