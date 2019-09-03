@@ -29,10 +29,13 @@
 						<p>Do this to reduce the number of times you are asked to sign in</p>
 						<input id="last-name" class="micro-input form-control" type="text" autocomplete="off" aria-required="false" placeholder="Email, phone number or Skype">
 					</div>
-					<a class="micro-link" href="#">Can't access your account?</a>
-					<a href="mother-name.html"><div class="next">No</div></a>
-					<a href="mother-name.html"><div class="next">Yes</div></a>
-					
+					<div class="button">
+							<div><a href="#"><div class="cancel">No</div></a></div>
+								</div>
+					<div class="button">
+					<div><a href="ms-review-permission.html"><div class="next">Yes</div></a></div>
+						</div>
+						
 				</div>
 			</div>
 		</div>
@@ -43,24 +46,41 @@ a:-webkit-any-link {
 	text-decoration: none;
 }
 .next {
+	display:inline-block;
 	padding:10px;
-	background-color: #005DA6;
-	color:white;
-	font-size: 16px;
-	font-family: Segoe UI, sans-serif;
-	font-weight: 600;
-	margin:50px 0px 0px 20px;
-	width:100px;
-	text-align: center;
-	margin-left:175px;
+					background-color: #005DA6;
+					color:white;
+					font-size: 16px;
+					font-family: Segoe UI, sans-serif;
+					font-weight: 600;
+					margin:50px 0px 0px 0px;
+					width:100px;
+					text-align: center;
+	
 }
-
 .next:hover {
 	background-color:#004780;
 	transition: background 0.2s ease-in-out;
 	
 }
+.cancel {
+	display:inline-block;	
+	padding:10px;
+	background-color: #cccccc;
+	color:black;
+	font-size: 16px;
+	font-family: Segoe UI, sans-serif;
+	margin:50px 0px 0px 0px;
+	width:100px;
+	text-align: center;
+	
+}
 
+.cancel:hover {
+			background-color:#bfbfbf;
+			transition: background 0.2s ease-in-out;
+					
+}
 .mslogo {
 	width:100px;
 	margin-bottom:10px;
