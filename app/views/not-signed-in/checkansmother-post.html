@@ -71,7 +71,7 @@ NHSBSA Matex prototype
                       Mother's NHS number
                     </dt>
                     <dd class="cya-answer">
-                      {{ data['nhsnum'] }}
+                      9434765919
                     </dd>
                     <dd class="cya-change">
                       <a class="link-right" href="#">
@@ -130,7 +130,7 @@ NHSBSA Matex prototype
               </dl> 
 <br>
 <br>
-<br>
+
               <div class="notice form-group">
                 <i class="icon icon-important">
                   <span class="visually-hidden">Warning</span>
@@ -141,11 +141,52 @@ NHSBSA Matex prototype
                 <p></p>
               </div>
 
-              <div class="multiple-choice multiple-radio">
-                <input id="confirm" name="confirm" type="checkbox" value="true">
-                <label for="confirm">I confirm that this information is correct and true in accordance with the mother's records on 1 August 2019.<br>
-                <p>I understand that when I press confirm and submit, I am submitting an application on behalf of the named person.</p> </label>
-              </div>
+              <style>
+                  .declaration {
+                    position: relative;
+                    overflow: hidden;
+                    border: 3px solid #bfc1c3;
+                    margin-top: 15px;
+                    margin-bottom: 35px;
+                    padding-top: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 15px;
+                  }
+    
+                  .declaration:before {
+                    content: "Confirmation";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+                    font-family: Arial, sans-serif;
+                    font-weight: 400;
+                    text-transform: none;
+                    font-size: 16px;
+                    line-height: 1.25;
+                    background: #bfc1c3;
+                    color: white;
+                  }
+                </style>
+                <div class="declaration">
+                  <br>
+                  <p>I confirm that this information is correct and true in accordance with the applicant’s records on 5 September 2019.</p>
+                  <p>I understand that the mother:
+                  </p>
+                  <ol class="list list-bullet">
+                    <li>has given her permission for this application to be submitted on her behalf</li>
+                    <li>knows the information submitted will be used by the NHS Business Services Authority and shared other organisations working on their behalf where necessary</li>
+                  </ol>
+                  <p>I understand that when I select confirm and submit, I am submitting an application on behalf of the named person.</p>
+                </div>
+    
+
+
+
+
+
+
         
               <div class="form-group">
                 <a class="button" href="mother-done-post" id="submit">Confirm and Submit</a>
