@@ -30,34 +30,43 @@
 						<input type="checkbox" name="noshow" value="noshow"> Do not show this again<br>
 						
 					</div>
-					
-					<div class="button cancel">
-						<a style="color:white;" href="#">No</a>
-					</div>
-					<div class="button next">
-						<a style="color:white;" href="ms-review-permission.html">Yes</a>
-					</div>
-						
+					<div class="button-group">
+						<a style="color:#333;" href="#">
+							<div class="button cancel">
+								No
+							</div>
+						</a>
+						<a style="color:white;" href="ms-review-permission.html">
+							<div class="button next">
+								Yes
+							</div>
+						</a>
+					</div>	
 				</div>
 			</div>
 		</div>
 		<!--<a href="sign-in-auth"><img class="full-page" src="/public/images/nhs-login.png" /></a> -->
 	</body>
 <style>
+
+.button-group {
+    margin-left: 45px;
+    margin-top: -20px;
+}
+
 a:-webkit-any-link {
 	text-decoration: none;
 }
 .next {
 	display:inline-block;
 	padding:10px;
-					background-color: #005DA6;
-					color:white;
-					font-size: 16px;
-					font-family: Segoe UI, sans-serif;
-					font-weight: 600;
-					margin:50px 0px 0px 0px;
-					width:100px;
-					text-align: center;
+	background-color: #005DA6;
+	color:white;
+	font-size: 16px;
+	font-family: Segoe UI, sans-serif;
+	margin:50px 0px 0px 10px;
+	width:100px;
+	text-align: center;
 	
 }
 .next:hover {

@@ -37,11 +37,12 @@ NHSBSA Matex prototype
 
 			<form action="nhsnum-handler" method="get" class="form">
 
+				
 				<div class="form-group">
-					<label class="form-label" for="nhsnum">NHS Number</label>
-					<input class="form-control" id="nhsnum" name="nhsnum" type="number" value="{{ data['nhsnum'] }}">
-				</div>
-
+          
+						<p class="form-hint">This is a 10 digit number, like 4857773456. </p>
+						<input class="form-control" id="nhsnum" name="nhsnum" type="number" value="{{ data['nhsnum'] }}">
+					  </div>
 
 
 			<div class="form-group">
