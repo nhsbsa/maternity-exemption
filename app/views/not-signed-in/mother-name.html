@@ -29,7 +29,7 @@ NHSBSA Matex prototype
 			<div class="form">
 				<form id="appform" role="form" method="post">
 
-						<form action="name-mother-handler" method="get" class="form">
+						
 					<fieldset>
 						
 						<h1 class="heading-large">
@@ -39,15 +39,17 @@ NHSBSA Matex prototype
 					
 						
 						<form action="firstname-handler" method="get" class="form">
-
-								<legend class="visuallyhidden">mother's name?</legend>
+								<legend class="visuallyhidden">mother's first name?</legend>
 								<div class="form-text">
-								<div class="form-group">
+								
+									<div class="form-group">
 
 								  <label class="form-label" for="firstname">First name</label>
 								  <input class="form-control" id="firstname" name="firstname" type="text" autocomplete="off">
 								</div>
-							
+
+								<form action="lastname-handler" method="get" class="form">
+										<legend class="visuallyhidden">mother's last name?</legend>
 						<div class="form-group">
 							<label class="form-label" for="lastname" >Last
 								name</label>

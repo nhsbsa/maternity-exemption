@@ -106,7 +106,7 @@ router.get(/emailconfirmnhs-handler/, function (req, res) {
 });
 
 ///************************                     
-//*******SIGNEDIN**********
+//*******/NOTSIGNEDIN******
 //*************************                      
 
 //motheremail//
@@ -150,7 +150,7 @@ router.get(/nhsnum-handler/, function (req, res) {
   ;
   
 ///************************                     
-//*****NOT SIGNEDIN********
+//*****SIGNEDIN********
 //*************************   
 
 // add your routes here
