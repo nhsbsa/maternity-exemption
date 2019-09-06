@@ -1,0 +1,137 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+NHSBSA Matex Prototype
+{% endblock %}
+
+{% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+<!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service
+      <span> - your <a target="" href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="grid-row">
+    <div class="column-full">
+      <a href="javascript:history.go(-1)" class="link-back">Back</a>
+      <span style="float:right; font-size:16px; margin-top: 30px;">
+        <a href="/common-pages/help" target="_blank" rel="noopener noreferrer">Help</a>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="done-panel no-tick">
+
+
+        <h2 style="font-weight: 400;" class="heading-small">
+
+          Based on what you've told us
+
+        </h2>
+
+        <h2 class="heading-large">
+
+          We cannot complete your registration
+
+        </h2>
+
+      </div>
+      <div class="notice form-group">
+        <i class="icon icon-important">
+          <span class="visually-hidden">Warning</span>
+        </i>
+        <strong class="bold-small">
+          The information you provided doesn't match the details ESR holds on you.
+        </strong>
+      </div>
+
+      <h2 class="heading-medium">
+
+        What happens next
+
+      </h2>
+
+      <p>Recheck your information. </p>
+      <dl class="govuk-check-your-answers cya-questions-long">
+        <div>
+          <dt class="cya-question">
+            Last name
+          </dt>
+          <dd class="cya-answer">
+            Phillips
+          </dd>
+          <dd class="cya-change">
+            <a class="link-right" href="#">
+              Change<span class="visually-hidden">last name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question cya-questions-long">
+            NMC PIN
+          </dt>
+          <dd class="cya-answer">
+            99A9999A
+          </dd>
+          <dd class="cya-change">
+            <a class="link-right" href="#">
+              Change<span class="visually-hidden"> NMC PIN </span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Date of birth
+          </dt>
+          <dd class="cya-answer">
+            10 October 1984
+          </dd>
+          <dd class="cya-change">
+            <a class="link-right" href="#">
+              Change<span class="visually-hidden">Your DOB</span>
+            </a>
+          </dd>
+        </div>
+<br>
+
+      </dl>
+
+      <details class="details-login" role="group">
+        <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">My
+            information is correct</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>If your information is correct but we are still unable to confirm your details, you should email us at <a
+              href="nhsbsa.healthcosts@nhs.net">nhsbsa.healthcosts@nhs.net</a></p>
+
+        </div>
+      </details>
+<br>
+      <div style="background-color:#dee0e2; padding:20px 40px;">
+        <h3 class="heading-small">PROTOTYPE ONLY</h3>
+        <p>Click <a href="/">here</a> to return to the index page.</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
