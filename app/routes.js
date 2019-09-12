@@ -1,6 +1,11 @@
 var express = require('express')
 var router = express.Router()
 
+// add your routes here
+
+module.exports = router
+
+
 // Route index page
 router.get('/', function (req, res) {
   res.render('index')
@@ -108,17 +113,16 @@ router.get(/emailconfirmnhs-handler/, function (req, res) {
 ///************************                     
 //*******/NOTSIGNEDIN******
 //*************************                      
-//mothername//
+//mother-name//
 
 router.get(/mothername-handler/, function (req, res) {
-  if (req.query.firstname && req.query.lastname) {
+  if (req.query.firstname == 'firstname' && req.query.lastname=='lastname') {
   res.redirect('mother-nhsnum');
-} else ( 
-  res.redirect('mothername')
+} else {
+  res.redirect('mother-name-test')
+}
+}
 );
-
-
-
 
 
 
@@ -164,8 +168,4 @@ router.get(/nhsnum-handler/, function (req, res) {
   
 ///************************                     
 //*****SIGNEDIN********
-//*************************   
-
-// add your routes here
-
-module.exports = router
+//*************************  
