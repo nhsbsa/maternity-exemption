@@ -29,36 +29,36 @@ NHSBSA Matex prototype
 			<div class="form">
 				<form id="appform" role="form" method="post">
 
-
+						
 					<fieldset>
-
+						
 						<h1 class="heading-large">
-							<span class="heading-secondary">Issue maternity exemption certificate</span>
-							What is the mother's name?
-						</h1>
+								<span class="heading-secondary">Issue maternity exemption certificate</span>
+								What is the mother's name?
+							  </h1>
+					
+						
+						<form action="mothername-handler" method="get" class="form">
 
+								<legend class="visuallyhidden">mother's first name?</legend>
+								<div class="form-text">
+								
+									<div class="form-group">
 
-						<form action="firstname-handler" method="get" class="form">
-							<legend class="visuallyhidden">mother's first name?</legend>
-							<div class="form-text">
-
-								<div class="form-group">
-
-									<label class="form-label" for="firstname">First name</label>
-									<input class="form-control" id="firstname" name="firstname" type="text"
-										autocomplete="off">
+								  <label class="form-label" for="firstname">First name</label>
+								  <input class="form-control" id="firstname" name="firstname" type="text" autocomplete="off">
 								</div>
 
-								<form action="lastname-handler" method="get" class="form">
-									<legend class="visuallyhidden">mother's last name?</legend>
-									<div class="form-group">
-										<label class="form-label" for="lastname">Last
-											name</label>
-										<input id="lastname" class="form-control" type="text" name="lastname"
-											autocomplete="off" aria-required="false">
-									</div>
-
-							</div>
+								
+							<legend class="visuallyhidden">mother's last name?</legend>
+						<div class="form-group">
+							<label class="form-label" for="lastname" >Last
+								name</label>
+							<input id="lastname" class="form-control" type="text" name="lastname" autocomplete="off"
+								aria-required="false">
+						</div>
+						
+					</div>
 					</fieldset>
 
 				</form>

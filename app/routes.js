@@ -108,6 +108,19 @@ router.get(/emailconfirmnhs-handler/, function (req, res) {
 ///************************                     
 //*******/NOTSIGNEDIN******
 //*************************                      
+//mothername//
+
+router.get(/mothername-handler/, function (req, res) {
+  if (req.query.firstname && req.query.lastname) {
+  res.redirect('mother-nhsnum');
+} else ( 
+  res.redirect('mothername')
+);
+
+
+
+
+
 
 //motheremail//
 
