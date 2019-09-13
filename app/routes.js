@@ -113,16 +113,15 @@ router.get(/emailconfirmnhs-handler/, function (req, res) {
 ///************************                     
 //*******/NOTSIGNEDIN******
 //*************************                      
-//mother-name//
+//mother-name-test//
 
 router.get(/mothername-handler/, function (req, res) {
-  if (req.query.firstname == 'firstname' && req.query.lastname=='lastname') {
+  if (req.query.firstname) {
   res.redirect('mother-nhsnum');
 } else {
   res.redirect('mother-name-test')
 }
-}
-);
+});
 
 
 
