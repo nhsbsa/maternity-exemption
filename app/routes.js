@@ -102,6 +102,17 @@ router.get(/emailnhs-handler/, function (req, res) {
   }
 });
 
+router.get(/emailnhsnotverify-handler/, function (req, res) {
+  if (req.query.emailnhsnotverify) {
+    res.redirect('../email-validation/emailsent');
+  } else  {
+    res.redirect('../email-validation/email-not-verify');
+  }
+});
+
+
+
+
 router.get(/emailconfirmnhs-handler/, function (req, res) {
   if (req.query.emailconfirm == 'yes') {
     res.redirect('../email-validation/email-sent');
