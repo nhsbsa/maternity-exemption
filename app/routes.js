@@ -104,7 +104,7 @@ router.get(/emailnhs-handler/, function (req, res) {
 
 router.get(/emailnhsnotverify-handler/, function (req, res) {
   if (req.query.emailnhsnotverify) {
-    res.redirect('../email-validation/emailsent');
+    res.redirect('../email-validation/email-sent-not-verify');
   } else  {
     res.redirect('../email-validation/email-not-verify');
   }
