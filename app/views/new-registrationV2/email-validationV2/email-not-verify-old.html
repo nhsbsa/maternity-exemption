@@ -1,0 +1,52 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+NHSBSA Matex Done Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service
+      <span>&nbsp;- your <a target="" href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <form action="emailnhs-handler" method="get" class="form">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        
+        <h1 class="heading-large">
+            <span class="heading-secondary">Register to issue maternity exemption certificates</span>
+            Your verification link has expired
+          </h1>
+          <br>
+        <div class="notice form-group">
+          <i class="icon icon-important">
+            <span class="visually-hidden">Warning</span>
+          </i>
+          <strong class="bold-small">
+            We have not been able to verify your NHSmail account.
+          </strong>
+        </div>
+
+        <h2 class="heading-medium">What happens next</h2>
+        <p>To proceed with your registration you must <a href="email-sent.html"> request a new verification link </a> and click on the link within 24 hours.
+           </p>
+
+
+        <br>
+        <br>
+
+        <div style="background-color:#dee0e2; padding:20px 40px;">
+          <h3 class="heading-small">PROTOTYPE ONLY</h3>
+          <p>Click <a href="/">here</a> to return to the index page.</p>
+        </div>
+      </div>
+    </div>
+
+</main>
+
+{% endblock %}
