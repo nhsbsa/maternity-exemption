@@ -23,12 +23,23 @@ NHSBSA Matex Done Prototype
           Check your email
 
         </h1>
-        <div class="panel2">
-          <div class="callout callout--subtle" >
-        <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true" color="#005ea5;">
+        
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            <p>We have sent an email to <span style="font-weight:bold">{{ data['emailnhs'] }}</span>
+              <br>Follow the link in the email to verify your email address.</p>
+          </strong>
+        </div>
+
+
+
+      <!----  <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
         <p>We have sent an email to <span style="font-weight:bold">{{ data['emailnhs'] }}</span>
       <br>Follow the link in the email to verify your email address.</p>
       </div>
+    -->
         <p>The verification email will expire within 24 hours.</p>
 <br>
 <br>
@@ -51,12 +62,14 @@ NHSBSA Matex Done Prototype
           <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">My NHSmail address is incorrect
               </span></summary>
 
-          <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+
+             
+          <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true"></div>
             <p>Enter your correct NHSmail address.</p>
             <label class="form-label" for="emailnhs">NHSmail address</label>
             <input class="form-control" id="emailnhs" name="emailnhs" type="text">
           </div>
-
+        </div>
 
           <div class="form-group">
             <input class="button" type="submit" value="Next">
@@ -71,8 +84,26 @@ NHSBSA Matex Done Prototype
           <p>Click <a href="/">here</a> to return to the index page.</p>
         </div>
       </div>
+
+
+
+      
     </div>
 
+
+ 
+
+
+
+
 </main>
+
+
+
+
+
+
+
+
 
 {% endblock %}
