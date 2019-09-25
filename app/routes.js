@@ -102,6 +102,8 @@ router.get(/emailnhs-handler/, function (req, res) {
   }
 });
 
+
+
 router.get(/emailnhsnotverify-handler/, function (req, res) {
   if (req.query.emailnhsnotverify) {
     res.redirect('../email-validation/email-sent-not-verify');
@@ -110,9 +112,6 @@ router.get(/emailnhsnotverify-handler/, function (req, res) {
   }
 });
 
-
-
-
 router.get(/emailconfirmnhs-handler/, function (req, res) {
   if (req.query.emailconfirm == 'yes') {
     res.redirect('../email-validation/email-sent');
@@ -120,6 +119,22 @@ router.get(/emailconfirmnhs-handler/, function (req, res) {
     res.redirect('../email-validation/emailnhs');
   }
 });
+
+
+///****************************************************
+//****NEW-REGISTRATION-ITERATION2/EMAIL_VALIDATIONV2****
+///**************************************************** 
+
+router.get(/emailnhs-iteration2-handler/, function (req, res) {
+  if (req.query.emailnhs) {
+    res.redirect('../email-validationV2/emailconfirm');
+  } else  {
+    res.redirect('../email-validationV2/emailnhs');
+  }
+});
+
+
+
 
 ///************************                     
 //*******/NOTSIGNEDIN******
