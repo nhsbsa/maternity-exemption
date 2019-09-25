@@ -22,10 +22,12 @@ NHSBSA Matex Done Prototype
         <span class="heading-secondary">Register to issue maternity exemption certificates</span>
         Check your email
       </h1>
+      <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
       <p>We have sent a new email to <span
-          style="font-weight:bold">{{ data['emailnhs'] }}</span> </p>
-      
-      <p>Follow the link in the email to verify your email address to continue with your registration.</p>
+          style="font-weight:bold">{{ data['emailnhs'] }}</span> 
+          <br>
+      Follow the link in the email to verify your email address to continue with your registration.</p>
+    </div>
         <p>The verification email will expire within 24 hours.</p>
 
       <form action="emailnhs-iteration2-handler" method="get" class="form">
