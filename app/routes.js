@@ -133,7 +133,13 @@ router.get(/emailnhs-iteration2-handler/, function (req, res) {
   }
 });
 
-
+router.get(/emailconfirmnhs-iteration2-handler/, function (req, res) {
+  if (req.query.emailconfirm == 'yes') {
+    res.redirect('../email-validationV2/email-sent');
+  } else if (req.query.emailconfirm == 'no') {
+    res.redirect('../email-validationV2/emailnhs');
+  }
+});
 
 
 ///************************                     
