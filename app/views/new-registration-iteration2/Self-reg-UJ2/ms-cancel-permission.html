@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	 	<title>Sign in</title>
+	 	<link rel="shortcut icon" href="/public/images/micro.ico" type="image/x-icon" />
+	  	<style>
+	  		.full-page {
+	  			width: 100%;
+	  			position: block;
+	  		}
+
+	  		.body-margin {
+	  			margin: 0px;
+	  		}
+	  	</style>
+	</head>
+
+	<body class="body-margin">
+		<div class="grid-row">
+			<div class="bg-img">
+				<!-- Microsoft -->
+				<div class="login-box">
+					<img src="/public/images/mslogo.jpg" alt="microsoft logo" class="mslogo" />
+					
+						<p>{{ data['emailnhs'] }}</p>
+						<br>
+						<br>
+						
+					<p>No action needed. You may close the window.</p>
+				
+				
+					
+					
+				</div>
+			</div>
+		</div>
+		<!--<a href="sign-in-auth"><img class="full-page" src="/public/images/nhs-login.png" /></a> -->
+	</body>
+<style>
+a:-webkit-any-link {
+	text-decoration: none;
+}
+
+
+
+
+.mslogo {
+	width:100px;
+	margin-bottom:10px;
+}
+.micro-link {
+	font-size:12px;
+	font-family:Segoe UI, sans-serif;
+	color: #0066ff;
+	font-weight:600;
+}
+
+.micro-link:hover {
+	text-decoration: underline;
+}
+
+
+
+.bg-img {
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6); 
+	background: url(/public/images/hills-bg.jpg) no-repeat;
+	overflow:hidden;
+	width:100%;
+	height:100vh;
+}
+
+.login-box{
+	margin:15% auto;
+	width:300px;
+	padding:30px;
+	background-color: white;
+}
+
+@media only screen and (max-width: 640px) {
+.login-box {
+	margin: 10% 10%;
+	width:300px;
+	padding:30px;
+	background-color: white;
+	}
+}
+
+.micro-input {
+	border-left:none;
+	border-top:none;
+	border-right:none;
+	border-bottom:2px solid silver;
+	width: 250px;
+	outline: none;
+	padding:5px;
+}
+
+.micro-input:focus {
+	border-left:none;
+	border-top:none;
+	border-right:none;
+	border-bottom:2px solid #0066ff;
+	width: 250px;
+	outline: none;
+	padding:5px;
+}
+
+.faux-micro {
+	display:block;
+	margin-bottom:20px;
+	font-family:Segoe UI, sans-serif;
+	font-weight:600;
+	font-size: 24px;
+	line-height: 28px;
+	color: #404040;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: Segoe UI, sans-serif;
+  font-size: 15px;
+  color: #737373;
+  font-weight: 400;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: Segoe UI, sans-serif;
+  font-size: 15px;
+  color: #737373;
+  font-weight: 400;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: Segoe UI, sans-serif;
+  font-size: 15px;
+  color: #737373;
+  font-weight: 400;  
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: Segoe UI, sans-serif;
+  font-size: 15px;
+  color: #737373;
+  font-weight: 400;
+}
+
+
+</style>
+</html>

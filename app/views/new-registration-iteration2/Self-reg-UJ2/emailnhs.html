@@ -25,7 +25,7 @@ NHSBSA Matex Prototype
             What is your NHSmail address?
           </h1>
 
-      <form action="emailnhs-iteration2-handler" method="get" class="form">
+      <form action="emailnhs-uj2iteration2-handler" method="get" class="form">
 <br>
         <legend class="visuallyhidden">What’s your email?</legend>
 
@@ -34,7 +34,7 @@ NHSBSA Matex Prototype
           <div class="form-group">
 
             <span class="form-hint">
-              We'll use this to send you a verification email.<br> Your NHSmail address should end in @nhs.net.
+              Your NHSmail address should end in @nhs.net.
             </span>
 
             <input class="form-control" id="emailnhs" name="emailnhs" type="text">
@@ -46,7 +46,15 @@ NHSBSA Matex Prototype
         <div class="form-group">
           <input class="button" type="submit" value="Continue">
         </div>
-
+        <details class="details-login" role="group">
+          <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">I do not
+              have an NHSmail account</span></summary>
+          <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+            <p>If you're working in a Trust or organisation that uses NHSmail, you can contact your local administrator or
+              IT helpdesk to set up an account.</p>
+            <p> <a href="https://portal.nhs.net/Help/joiningnhsmail">Read more about how to join NHSmail</a>.</p>
+          </div>
+        </details>
       </form>
 
     </div>

@@ -141,6 +141,28 @@ router.get(/emailconfirmnhs-iteration2-handler/, function (req, res) {
   }
 });
 
+///****************************************************
+//****NEW-REGISTRATION-ITERATION2/EMAIL_VALIDATIONV2***
+///**************************************************** 
+
+router.get(/emailnhs-uj2iteration2-handler/, function (req, res) {
+  if (req.query.emailnhs) {
+    res.redirect('../Self-reg-UJ2/register-nmc');
+  } else  {
+    res.redirect('../Self-reg-UJ2/emailnhs');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
 
 ///************************                     
 //*******/NOTSIGNEDIN******
