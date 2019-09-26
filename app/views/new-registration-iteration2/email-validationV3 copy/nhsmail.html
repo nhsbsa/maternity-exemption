@@ -1,0 +1,77 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+NHSBSA Matex email prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+	<div class="phase-banner">
+		<p>
+			<strong class="phase-tag">BETA</strong>This is a new service <span>- your <a target="_blank"
+					href="https://www.snapsurveys.com/wh/s.asp?k=151499191810&amp;application=matex-hcp-app&amp;version=0.1.1.31&amp;ref=yH562KPKDYmDS2-7b9akDbyZdOwGJISZmXdBLcEAmis">feedback</a>
+				will help us to improve it.</span>
+		</p>
+	</div>
+	<div class="grid-row">
+		<div class="column-full">
+			<a href="javascript:history.go(-1)" class="link-back">Back</a>
+			<span style="float:right; font-size:16px; margin-top: 30px;">
+				<a href="/common-pages/help" target="_blank" rel="noopener noreferrer">Help</a>
+			</span>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<form action="nhsmail-handler" method="get" class="form">
+
+				<h1 class="heading-large">
+					<span class="heading-secondary">Register to issue maternity exemption certificates</span>
+					Do you have an NHSmail account?
+				</h1>
+				<span class="form-hint"><br>
+					NHSmail account addresses end with @nhs.net
+				</span>
+
+
+				<div class="form-group">
+					<fieldset>
+						<div class="multiple-choice" data-target="nhs-mail">
+							<input id="example-nhs-email" type="radio" name="radiocontactgroup" value="Yes">
+							<label for="example-nhs-email">Yes</label>
+						</div>
+						
+
+
+						<div class="multiple-choice" data-target="no-nhs-mail">
+							<input id="example-no-nhs-mail" type="radio" name="radiocontactgroup" value="No">
+							<label for="example-no-nhs-mail">No</label>
+						</div>
+						
+					</fieldset>
+
+
+				</div>
+
+				
+
+				<div class="form-group">
+					<input class="button" type="submit" value="Continue">
+				</div>
+			</form>
+
+			
+
+
+		</div>
+	</div>
+
+
+
+
+
+</main>
+
+{% endblock %}

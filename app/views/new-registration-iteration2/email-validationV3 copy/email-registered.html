@@ -1,0 +1,44 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+NHSBSA Matex Done Prototype
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      This is a new service
+      <span>&nbsp;- your <a target="" href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <form action="emailnhs-handler" method="get" class="form">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <div class="done-panel">
+          <h1 class="heading-large"><span id=""></span>Your NHSmail address is already registered</h1>
+        </div>
+        <p> <span style="font-weight:bold">yourname@nhs.net</span> is already registered.</p>
+        <h2 class="heading-medium">What happens next</h2>
+        <p>You are already registered to use this service. Use your NHSmail and password to sign in. </p>
+<p>Once you have signed in, you'll be able to issue maternity exemption certificates on behalf of new or expectant mothers.</p>
+
+        <p>
+          <a class="button" href="#" role="button">Issue certificate </a>
+        </p>
+
+        <br>
+        
+
+        <div style="background-color:#dee0e2; padding:20px 40px;">
+          <h3 class="heading-small">PROTOTYPE ONLY</h3>
+          <p>Click <a href="/">here</a> to return to the index page.</p>
+        </div>
+      </div>
+    </div>
+
+</main>
+
+{% endblock %}
