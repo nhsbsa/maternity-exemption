@@ -147,14 +147,19 @@ router.get(/emailconfirmnhs-iteration2-handler/, function (req, res) {
 
 router.get(/emailnhs-uj2iteration2-handler/, function (req, res) {
   if (req.query.emailnhs) {
-    res.redirect('../Self-reg-UJ2/register-nmc');
+    res.redirect('../Self-reg-UJ2/emailconfirm');
   } else  {
     res.redirect('../Self-reg-UJ2/emailnhs');
   }
 });
 
-
-
+router.get(/emailconfirmnhs-uj2iteration2-handler/, function (req, res) {
+  if (req.query.emailconfirm == 'yes') {
+    res.redirect('../Self-reg-UJ2/register-nmc');
+  } else if (req.query.emailconfirm == 'no') {
+    res.redirect('../Self-reg-UJ2/emailnhs');
+  }
+});
 
 
 
