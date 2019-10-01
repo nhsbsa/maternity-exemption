@@ -147,7 +147,7 @@ router.get(/emailconfirmnhs-iteration2-handler/, function (req, res) {
 
 router.get(/emailnhs-uj2iteration2-handler/, function (req, res) {
   if (req.query.emailnhs) {
-    res.redirect('../Self-reg-UJ2/emailconfirm');
+    res.redirect('../Self-reg-UJ2/register-nmc');
   } else  {
     res.redirect('../Self-reg-UJ2/emailnhs');
   }
