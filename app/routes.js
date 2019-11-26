@@ -227,3 +227,19 @@ router.get(/nhsnum-handler/, function (req, res) {
 ///************************                     
 //*****SIGNEDIN********
 //*************************  
+
+///************************                     
+//*****MIGRATION***********
+//*************************  
+
+router.get(/nmcgmc-handler/, function (req, res) {
+  if (req.query.nmcgmc == 'gmc') {
+    res.redirect('mother-present');
+  } else if (req.query.nmcgmc == 'nmc') {
+    res.redirect('register-nmc');
+  }
+});
+
+
+
+
