@@ -234,7 +234,7 @@ router.get(/nhsnum-handler/, function (req, res) {
 
 router.get(/nmcgmc-handler/, function (req, res) {
   if (req.query.nmcgmc == 'gmc') {
-    res.redirect('register-done');
+    res.redirect('reg-done');
   } else if (req.query.nmcgmc == 'nmc') {
     res.redirect('register-nmc');
   }
